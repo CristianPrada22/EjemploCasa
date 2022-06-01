@@ -1,0 +1,18 @@
+{% extends "base.html" %}
+
+{% block title %}Error{% endblock %}
+
+{% block content %}
+
+<div class="container my-3">
+    <h1 class="font-weight-bold">Payment not made!</h1>
+    <p>
+        Something happened and the payment did not go through. Please try again. 
+        If the error persists, please contact us.
+    </p>
+    <a class="btn btn-primary" href="{% url 'payments:process' %}">
+        Try again
+    </a>
+</div>
+
+{% endblock %}

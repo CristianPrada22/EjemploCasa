@@ -1,0 +1,247 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-01-18 14:55-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main/templates/base.html:51
+msgid "Contact us on +420 777 555 333 or hello@universal.com."
+msgstr "Contactenos en el +420 777 555 333 o hello@universal.com."
+
+#: main/templates/base.html:62
+msgid "Sign In"
+msgstr "Inicio de sesión"
+
+#: main/templates/base.html:66
+msgid "Sign Up"
+msgstr "Registro"
+
+#: main/templates/base.html:80
+msgid "Administrate"
+msgstr "Administrar"
+
+#: main/templates/base.html:81 main/templates/base.html:96
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: main/templates/base.html:95
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: main/templates/base.html:121
+msgid "Customer Login"
+msgstr "Inicio de sesión - Cliente"
+
+#: main/templates/base.html:135
+msgid "Warning"
+msgstr "Advertencia"
+
+#: main/templates/base.html:138
+msgid "Username"
+msgstr "Usuario"
+
+#: main/templates/base.html:142
+msgid "Password"
+msgstr "Contraseña"
+
+#: main/templates/base.html:146
+msgid "Sign in"
+msgstr "Inicio de sesión"
+
+#: main/templates/base.html:148
+msgid "Not registered yet?"
+msgstr "¿Aun no esta registrado?"
+
+#: main/templates/base.html:151
+msgid "Register now"
+msgstr "Registrese ahora"
+
+#: main/templates/base.html:152
+msgid ""
+"It is easy and done in 1 minute and gives you access to special discounts "
+"and much more"
+msgstr ""
+"Es fácil y se hace en 1 minuto, ademas te da acceso a descuentos especiales "
+"y mucho más"
+
+#: main/templates/base.html:167
+msgid "Enciso - go to homepage"
+msgstr "Enciso - ir a la página principal"
+
+#: main/templates/base.html:173
+msgid "Toggle navigation"
+msgstr "Alternar navegación"
+
+#: main/templates/base.html:180
+msgid "Search"
+msgstr "Buscar"
+
+#: main/templates/base.html:190
+msgid "Home"
+msgstr "Inicio"
+
+#: main/templates/base.html:194
+msgid "CATEGORY"
+msgstr "CATEGORIA"
+
+#: main/templates/base.html:199
+msgid "Shop"
+msgstr "Tienda"
+
+#: main/templates/base.html:201
+msgid "All Products"
+msgstr "Todos los productos"
+
+#: main/templates/base.html:203
+msgid "Category - sidebar left"
+msgstr "Categoria - barra lateral izquierda"
+
+#: main/templates/base.html:205
+msgid "Category - full width"
+msgstr "Categoria - ancho total"
+
+#: main/templates/base.html:207
+msgid "Product detail"
+msgstr "Detalle de producto"
+
+#: main/templates/base.html:216
+msgid "About"
+msgstr "Acerca de"
+
+#: main/templates/base.html:220
+msgid "About us"
+msgstr "Sobre nosotros"
+
+#: main/templates/base.html:221
+msgid "Our team"
+msgstr "Nuestro equipo"
+
+#: main/templates/base.html:222
+msgid "Team member"
+msgstr "Miembros del equipo"
+
+#: main/templates/base.html:223
+msgid "Services"
+msgstr "Servicios"
+
+#: main/templates/base.html:231 main/templates/base.html:303
+msgid "Contact"
+msgstr "Contacto"
+
+#: main/templates/base.html:234
+msgid "Contact option 1"
+msgstr "Opción de contacto 1"
+
+#: main/templates/base.html:264
+msgid "About Us"
+msgstr "Sobre nosotros"
+
+#: main/templates/base.html:267
+msgid "Join Our Monthly Newsletter"
+msgstr "Únase a nuestro boletín mensual"
+
+#: main/templates/base.html:279
+msgid "Blog"
+msgstr "Blog"
+
+#: main/templates/base.html:284 main/templates/base.html:290
+msgid "Blog post name"
+msgstr "Nombre de la publicación"
+
+#: main/templates/base.html:296
+msgid "Very very long blog post name"
+msgstr "Nombre de la publicación muy muy largo"
+
+#: main/templates/base.html:304
+msgid "Universal Ltd."
+msgstr "Universal Ltd."
+
+#: main/templates/base.html:304
+msgid "13/25 New Avenue"
+msgstr "Nueva avenida 13/25"
+
+#: main/templates/base.html:304
+msgid "Newtown upon River"
+msgstr "Newtown upon River"
+
+#: main/templates/base.html:305
+msgid "45Y 73J"
+msgstr "45Y 73J"
+
+#: main/templates/base.html:305
+msgid "England"
+msgstr "Inglaterra"
+
+#: main/templates/base.html:305
+msgid "Great Britain"
+msgstr "Gran Bretaña"
+
+#: main/templates/base.html:306
+msgid "Go to contact page"
+msgstr "Ir a la página de contacto"
+
+#: main/templates/indexx.html:4
+msgid "Enciso's shop"
+msgstr "Tienda de Enciso"
+
+#: main/templates/indexx.html:21
+msgid "COMPUTER FAIR"
+msgstr "FERIA INFORMATICA"
+
+#: main/templates/indexx.html:22
+msgid "Computers for study"
+msgstr "Computadores para estudiar"
+
+#: main/templates/indexx.html:22
+msgid "work and entertainment"
+msgstr "trabajar y entretenenrse"
+
+#: main/templates/indexx.html:31
+msgid "YOUR IDEAL CELL PHONE AT THE BEST PRICE"
+msgstr "TU CELULAR IDEAL AL MEJOR PRECIO"
+
+#: main/templates/indexx.html:44
+msgid "THE BEST IN FASHION CAN BE FOUND HERE"
+msgstr "LO MEJOR DE LA MODA SE ENCUENTRA AQUI"
+
+#: main/templates/indexx.html:46
+msgid "CLOTHES FOR MEN"
+msgstr "ROPA PARA HOMBRES"
+
+#: main/templates/indexx.html:47
+msgid "WOMEN'S CLOTHING"
+msgstr "ROPA PARA MUJERES"
+
+#: main/templates/indexx.html:48
+msgid "CLOTHES FOR KIDS"
+msgstr "ROPA PARA NIÑOS"
+
+#: main/templates/indexx.html:60
+msgid "RUNING SPORT SHOES"
+msgstr "CALZADO DEPORTIVO"
+
+#: main/templates/indexx.html:77
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#: main/templates/indexx.html:95
+msgid "Price"
+msgstr "Precio"
+
+#: main/templates/indexx.html:106
+msgid "Our Clients"
+msgstr "Nuestros clientes"

@@ -1,0 +1,36 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    {% trans "Shop" %}
+{% endblock title %}
+
+{% block content %}
+
+<div class="site-section m-3 p-3">
+    <div class="container bg-white">
+        <div class="row mb-5">            
+            {% for product in product %}
+            <div class="col-lg-4 col-md-6 col-ms-6 mb-2 mt-5" data-aos='fade-up'>
+
+                <div class="d-flex align-items-start justify-content-center" >
+                    <figure class="block-4-image ">
+                        <a href="{{ product.get_absolute_url }}">
+                            <img class="img-fluid img-responsive" style="height: 250px;" src="{{ product.image.url }}" alt="{{ product.title }}"> 
+                        </a>
+                    </figure>
+                </div>             
+                <div class="d-block justify-content-start block-4-text p-2">
+                    <a href="{{ product.get_absolute_url }}">
+                        <h3>{% trans product.title %}</h3>
+                    </a>
+                    <p class="mb-0">{% trans "Price" %}: {{ product.price }}</p>
+                </div>
+            </div>
+            {% endfor %}                    
+        </div>
+        <div>
+            {% include 'pagination.html'%}
+        </div>
+    </div>
+</div>
+{% endblock content %}
