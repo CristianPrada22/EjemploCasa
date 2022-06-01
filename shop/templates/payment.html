@@ -1,0 +1,116 @@
+{% extends "indexx.html" %}
+{% load i18n %}
+
+{% block title %}
+    {% trans " Payment" %}
+{% endblock title %}
+
+{% block content %}
+
+<div class="site-section p-3">
+    <div class="container bg-white p-3">
+        <div class="row">
+            <div class="col-md-7 mb-md-0">
+                <h2 class="h3 mb-3 text-black text-center">{% trans "Select Payment Method" %}</h2>
+                <hr />
+                <div id="paypal-button-container" class="pt-4"></div>
+            </div>
+            <div class="col-md-5">
+                <div class="row mb-5">
+                    <div class="col-md-12">
+                        <h2 class="h3 mb-3 text-black text-center">{% trans "Your Order" %}</h2>
+                        <hr>
+                        <div class="p-1">
+                            <table class="table site-block-order-table mb-2">
+                                <thead>
+                                    <th>{% trans "Product" %}</th>
+                                    <th>{% trans "Total" %}</th>
+                                </thead>
+                                <tbody>
+                                    {% for item in order.items.all %}
+                                    <tr>
+                                        <td>
+                                            {{ item.product.title }}
+                                            <strong class="mx-2">x</strong> {{ item.quantity }}
+                                        </td>
+                                        <td>
+                                            $ {{ item.get_total_item_price }}
+                                        </td>
+                                    </tr>
+                                    {% endfor %}
+                                    <tr>
+                                        <td><strong class="text-black font-weight-bold">{% trans "Subtotal" %}</strong></td>
+                                        <td>$ {{ order.get_subtotal }}</td>
+                                    </tr>
+                                    <tr>
+                                        <td><strong>{% trans "Order Total" %}</strong></td>
+                                        <td><strong class="text-black font-weight-bold">$ {{order.get_total}}</strong></td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+<script src="https://www.paypal.com/sdk/js?client-id=ARZk3IYo3IZ4VLsf6tKoFxLkJzxV6_Ywg8-8SeLq19C67NsvAuTIeDtILVJ0gUgnXoPuEFqOxJSyW5Re"></script>
+<script>
+    function getCookie(name) {
+        let cookieValue = null;
+        if (document.cookie && document.cookie !== '') {
+            const cookies = document.cookie.split(';');
+            for (let i = 0; i < cookies.length; i++) {
+                const cookie = cookies[i].trim();
+                // Does this cookie string begin with the name we want?
+                if (cookie.substring(0, name.length + 1) === (name + '=')) {
+                    cookieValue = decodeURIComponent(cookie.substring(name.length + 1));
+                    break;
+                }
+            }
+        }
+        return cookieValue;
+    }
+    const csrftoken = getCookie('csrftoken');
+    function initPayPalButton() {
+        paypal.Buttons({
+            style: {
+                shape: 'pill',
+                color: 'blue',
+                layout: 'vertical',
+                label: 'paypal',
+
+            },
+            createOrder: function (data, actions) {
+                return actions.order.create({
+                    purchase_units: [{
+                        "amount": {
+                            "currency_code": "USD",
+                            "value": '{{order.get_total|stringformat:".2f"}}'
+                        }
+                    }]
+                });
+            },
+            onApprove: function (data) {
+                var url = "{% url 'shop:payment_complete' %}"
+                return fetch(url, {
+                    method: 'POST',
+                    headers: {
+                        'content-type': 'application/json',
+                        'X-CSRFToken': csrftoken,
+                    },
+                    body: JSON.stringify({
+                        orderID: data.orderID
+                    })
+                }).then(function () {
+                    location.href = '{% url "shop:payment_successful" %}';
+                })
+            },
+        }).render('#paypal-button-container');
+    }
+    initPayPalButton();
+</script>
+
+{% endblock content %}

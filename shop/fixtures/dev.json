@@ -1,0 +1,94 @@
+[
+  {
+    "model": "shop.node",
+    "pk": 1,
+    "fields": {
+      "name": "Merchandising",
+      "parent": null
+    }
+  },
+  {
+    "model": "shop.node",
+    "pk": 2,
+    "fields": {
+      "name": "Mugs",
+      "parent": 1
+    }
+  },
+  {
+    "model": "shop.node",
+    "pk": 3,
+    "fields": {
+      "name": "Diaries",
+      "parent": 1
+    }
+  },
+  {
+    "model": "shop.producttranslation",
+    "pk": 1,
+    "fields": {
+      "language_code": "en",
+      "title": "Enciso Mug",
+      "descritption": "This porcelain mug features the Enciso Systems logo.",
+      "master": 1
+    }
+  },
+  {
+    "model": "shop.producttranslation",
+    "pk": 2,
+    "fields": {
+      "language_code": "es",
+      "title": "Enciso Mugs",
+      "descritption": "Este mug de porcelana lleva el logotipo de Enciso Systems.",
+      "master": 1
+    }
+  },
+  {
+    "model": "shop.producttranslation",
+    "pk": 3,
+    "fields": {
+      "language_code": "en",
+      "title": "Enciso Systems Diary",
+      "descritption": "This diary features the Enciso Systems logo.",
+      "master": 2
+    }
+  },
+  {
+    "model": "shop.producttranslation",
+    "pk": 4,
+    "fields": {
+      "language_code": "es",
+      "title": "Agenda Enciso Systems",
+      "descritption": "Esta agenda lleva el logotipo de Enciso Systems.",
+      "master": 2
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 1,
+    "fields": {
+      "subcategory": 2,
+      "slug": "EncisoMug",
+      "image": "product_images/mug_kPyJ3Gz.jpg",
+      "price": "2.50",
+      "stock": 5,
+      "created": "2022-05-16T20:28:09.151Z",
+      "updated": "2022-05-16T20:29:48.442Z",
+      "active": true
+    }
+  },
+  {
+    "model": "shop.product",
+    "pk": 2,
+    "fields": {
+      "subcategory": 3,
+      "slug": "DiaryEnciso",
+      "image": "product_images/agenda.png",
+      "price": "5.16",
+      "stock": 5,
+      "created": "2022-05-16T20:33:10.190Z",
+      "updated": "2022-05-16T20:33:51.487Z",
+      "active": true
+    }
+  }
+]

@@ -1,0 +1,99 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% trans "Job Description" %}
+{% endblock title %}
+
+{% block content %}
+<div class="container bg-white pt-2 pb-2 mt-3 mb-3">
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#recruitmentRequest" aria-expanded="true" aria-controls="recruitmentRequest">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Recruitment request" %}
+            </a>
+        </h3>
+    </div>
+    <div id="recruitmentRequest" class="collapse show">
+        <div class="card card-body">
+            <div class="row">
+                <div class="form-group col row">
+                    <label for="dateRequest" class="col-sm-5 col-form-label">{% trans "Date of request" %}:</label>
+                    <div class="col-sm-7 p-1">
+                        <input type="text" readonly class="form-control-plaintext" id="dateRequest" value="">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="requester" class="col-sm-3 col-form-label p-1">{% trans "Requester" %}:</label>
+                    <div class="col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext" id="requester" value="{{Recruitment.requester}}">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="departament" class="col-sm-5 col-form-label p-1">{% trans "Departament" %}:</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext" id="departament" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col row">
+                    <label for="startingDate" class="col-sm-5 col-form-label">{% trans "Starting date" %}:</label>
+                    <div class="col-sm-7 p-1">
+                        <input type="text" readonly class="form-control-plaintext" id="startingDate" value="">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="title" class="col-sm-3 col-form-label p-1">{% trans "Title" %}:</label>
+                    <div class="col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext" id="title" value="">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="vacancies" class="col-sm-5 col-form-label p-1">{% trans "Number of vacancies" %}:</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext" id="vacancies" value="">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="responsabilities" class="col-sm-2 col-form-label">{% trans "Responsabilities" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="responsabilities" value="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="location" class="col-sm-2 col-form-label">{% trans "Location" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="location" value="">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="comments" class="col-sm-2 col-form-label">{% trans "Comments" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext" id="comments" value="">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#jobDescription" aria-expanded="true" aria-controls="jobDescription">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Job Description" %}
+            </a>
+        </h3>
+    </div>
+    <div id="jobDescription" class="collapse show">
+        <div class="card card-body">
+            <form id="jobD" method="post" action="">
+                {% csrf_token %}
+                {{ form|crispy}}
+                <div id="btn_save" class="d-flex col-md-12 justify-content-center">
+                    <input type="submit" class="btn btn-md bg-gray w-25" value="{% trans 'Save' %}">
+                </div>
+            </form>
+        </div>
+    </div>
+</div>
+{% endblock content %}

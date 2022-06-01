@@ -1,0 +1,48 @@
+{% load i18n%}
+{% if products.paginator.num_pages > 1%}
+    <div class="d-flex justify-content-center">
+        <ul class="pagination">
+            {% if products.has_previous %}
+                <li class="page-item d-none d-sm-block"><a class="page-link" href="?page={{ products.previous_page_number }}">
+                    &lang; {% trans "Previous" %}</a></li>
+            {% endif %}
+            {% for page in products.paginator.page_range %}
+                {% if forloop.last and page != products.number and products.paginator.num_pages > 7 %} 
+                    {% if products.next_page_number != products.paginator.num_pages%}
+                    <li class="page-item">
+                        <a class="page-link" href="?page={{ products.number | add:1}}">...</a>
+                    </li>
+                    {% endif %}
+                <li class="page-item">
+                        <a class="page-link" href="?page={{paginator.num_pages}}">{{products.paginator.num_pages}}</a>
+                </li>
+                {% endif %}
+                {% if page == products.number and page > 7 %}
+                <li class="page-item">
+                    <a class="page-link" href="?page={{ page | add:-1 }}">...</a>
+                </li>    
+                {% endif %}
+                {% if page < 7 or page == products.number %}
+                <li class="page-item {% if page == products.number %}active{% endif %}">
+                    <a class="page-link" href="?page={{ page }}">{{ page }}</a>
+                </li>
+                {% endif %}
+            {% endfor %}
+            {% if products.has_next %}
+                <li class="page-item d-none d-sm-block">
+                    <a class="page-link" href="?page={{ products.next_page_number }}">{% trans "Next" %} &rang;</a>
+                </li>
+            {% endif %}
+        </ul>
+    </div>
+    <div class="d-flex justify-content-center d-sm-none">            
+        {% if products.has_previous %}
+            <span class="page-item"><a  class="page-link" href="?page={{ products.previous_page_number }}">&lang; {% trans "Previous" %}</a></span>
+        {% endif %}
+        {% if products.has_next %}
+            <span class="page-item"><a class="page-link" href="?page={{ products.next_page_number }}">{% trans "Next" %} &rang;</a></span>
+        {% endif %}
+        <br>
+        <br>
+    </div>
+{% endif %}
