@@ -1,0 +1,243 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 12:46-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: main/templates/base.html:46
+msgid "Contact us on +57 (608) 678 2084 or info@encisosystems.com."
+msgstr "Contactenos al +57 (608) 678 2084 o info@encisosystems.com."
+
+#: main/templates/base.html:54
+msgid "Sign In"
+msgstr "Inicio de sesión"
+
+#: main/templates/base.html:58
+msgid "Sign Up"
+msgstr "Registro"
+
+#: main/templates/base.html:70
+msgid "Administrate"
+msgstr "Administrar"
+
+#: main/templates/base.html:71 main/templates/base.html:84
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: main/templates/base.html:83
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: main/templates/base.html:122
+msgid "Customer Login"
+msgstr "Inicio de sesión - Cliente"
+
+#: main/templates/base.html:136
+msgid "Warning"
+msgstr "Advertencia"
+
+#: main/templates/base.html:139
+msgid "Username"
+msgstr "Usuario"
+
+#: main/templates/base.html:143
+msgid "Password"
+msgstr "Contraseña"
+
+#: main/templates/base.html:147
+msgid "Sign in"
+msgstr "Inicio de sesión"
+
+#: main/templates/base.html:149
+msgid "Not registered yet?"
+msgstr "¿Aun no esta registrado?"
+
+#: main/templates/base.html:152
+msgid "Register now"
+msgstr "Registrese ahora"
+
+#: main/templates/base.html:153
+msgid ""
+"It is easy and done in 1 minute and gives you access to special discounts "
+"and much more"
+msgstr ""
+"Es fácil y se hace en 1 minuto, ademas te da acceso a descuentos especiales "
+"y mucho más"
+
+#: main/templates/base.html:173
+msgid "Contact"
+msgstr "Contacto"
+
+#: main/templates/base.html:177
+msgid "Address:"
+msgstr "Dirección"
+
+#: main/templates/base.html:181
+msgid "Phone:"
+msgstr "Telefono"
+
+#: main/templates/base.html:184
+msgid "Cell:"
+msgstr "Celular"
+
+#: main/templates/base.html:187
+msgid "Email:"
+msgstr "Correo"
+
+#: main/templates/base.html:193
+msgid "Social Media"
+msgstr "Redes Sociales"
+
+#: main/templates/base.html:215
+msgid "Legal Notice"
+msgstr "Noticias Legales"
+
+#: main/templates/base.html:224
+msgid "Help"
+msgstr "Ayuda"
+
+#: main/templates/home.html:4
+msgid "Home | Enciso Systems"
+msgstr "Inicio | Enciso Systems"
+
+#: main/templates/home.html:15 main/templates/indexx.html:15
+msgid "Enciso - go to homepage"
+msgstr "Enciso - ir a la página principal"
+
+#: main/templates/home.html:68
+msgid "ARTICLE"
+msgstr "ARTÍCULO"
+
+#: main/templates/home.html:92
+msgid "Read more"
+msgstr "Leer más"
+
+#: main/templates/home.html:107 main/templates/home.html:140
+msgid "Previous"
+msgstr "Anterior"
+
+#: main/templates/home.html:133 main/templates/home.html:143
+msgid "Next"
+msgstr "Suguiente"
+
+#: main/templates/indexx.html:4
+msgid "Enciso's shop"
+msgstr "Tienda de Enciso"
+
+#: main/templates/indexx.html:25
+msgid "Toggle navigation"
+msgstr "Alternar navegación"
+
+#: main/templates/indexx.html:33
+msgid "Search"
+msgstr "Buscar"
+
+#: main/templates/indexx.html:73
+msgid "COMPUTER FAIR"
+msgstr "FERIA INFORMATICA"
+
+#: main/templates/indexx.html:74
+msgid "Computers for study"
+msgstr "Computadores para estudiar"
+
+#: main/templates/indexx.html:74
+msgid "work and entertainment"
+msgstr "trabajar y entretenenrse"
+
+#: main/templates/indexx.html:83
+msgid "YOUR IDEAL CELL PHONE AT THE BEST PRICE"
+msgstr "TU CELULAR IDEAL AL MEJOR PRECIO"
+
+#: main/templates/indexx.html:96
+msgid "THE BEST IN FASHION CAN BE FOUND HERE"
+msgstr "LO MEJOR DE LA MODA SE ENCUENTRA AQUI"
+
+#: main/templates/indexx.html:98
+msgid "CLOTHES FOR MEN"
+msgstr "ROPA PARA HOMBRES"
+
+#: main/templates/indexx.html:99
+msgid "WOMEN'S CLOTHING"
+msgstr "ROPA PARA MUJERES"
+
+#: main/templates/indexx.html:100
+msgid "CLOTHES FOR KIDS"
+msgstr "ROPA PARA NIÑOS"
+
+#: main/templates/indexx.html:112
+msgid "RUNING SPORT SHOES"
+msgstr "CALZADO DEPORTIVO"
+
+#: main/templates/indexx.html:129
+msgid "PRODUCTS"
+msgstr "PRODUCTOS"
+
+#: main/templates/indexx.html:147
+msgid "Price"
+msgstr "Precio"
+
+#: main/templates/indexx.html:158
+msgid "Our Clients"
+msgstr "Nuestros clientes"
+
+#~ msgid "About Us"
+#~ msgstr "Sobre nosotros"
+
+#~ msgid "Join Our Monthly Newsletter"
+#~ msgstr "Únase a nuestro boletín mensual"
+
+#~ msgid "Blog"
+#~ msgstr "Blog"
+
+#~ msgid "Blog post name"
+#~ msgstr "Nombre de la publicación"
+
+#~ msgid "Very very long blog post name"
+#~ msgstr "Nombre de la publicación muy muy largo"
+
+#~ msgid "Go to contact page"
+#~ msgstr "Ir a la página de contacto"
+
+#~ msgid "Home"
+#~ msgstr "Inicio"
+
+#~ msgid "CATEGORY"
+#~ msgstr "CATEGORIA"
+
+#~ msgid "Shop"
+#~ msgstr "Tienda"
+
+#~ msgid "All Products"
+#~ msgstr "Todos los productos"
+
+#~ msgid "Product detail"
+#~ msgstr "Detalle de producto"
+
+#~ msgid "About"
+#~ msgstr "Acerca de"
+
+#~ msgid "About us"
+#~ msgstr "Sobre nosotros"
+
+#~ msgid "Our team"
+#~ msgstr "Nuestro equipo"
+
+#~ msgid "Team member"
+#~ msgstr "Miembros del equipo"
+
+#~ msgid "Services"
+#~ msgstr "Servicios"

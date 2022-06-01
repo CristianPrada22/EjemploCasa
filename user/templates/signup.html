@@ -1,0 +1,54 @@
+{% extends "indexx.html" %}
+{% load i18n%}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% trans "Sign Up" %}
+{% endblock %}
+
+{% block content %}
+    <div id="content" class="p-3">
+        <div class="container bg-white">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="box">
+                        <h2 class="text-uppercase">{% trans "New account" %}</h2>
+                        <hr>
+                        <form action="{% url 'user:signup' %}" method="POST">
+                            {% csrf_token %}
+                            {{ form |crispy }}                  
+                            <button class="btn btn-template-outlined btn-block mt-5" type="submit">{% trans "Register" %}!</button>
+                        </form>
+                    </div>
+                </div>
+                <div class="col-lg-6">
+                    <div class="box">
+                        <h2 class="text-uppercase">{% trans "Login" %}</h2>
+                        <hr>
+                        <form method="POST" action= "{% url 'user:login' %}" >
+                            {% csrf_token %}
+    
+                            <div class="form-group " >
+                                {% if form.error_messages %}
+                                    <div class="alert alert-danger alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss = "alert" aria-label = "Close">
+                                        <span aria-hidden = "true">&times;</span>
+                                        </button>
+                                        <strong>{% trans "Warning" %}: </strong> {{ form.get_invalid_login_error }}
+                                    </div>
+                                {% endif %}
+
+                                <input class="form-control" type="text" placeholder="{% trans 'Username' %}" name="username" style="max-width: 500px;"/>
+                            </div>
+    
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="{% trans 'Password' %}" name="password" style="max-width: 500px;" />
+                            </div>    
+                            <button class="btn btn-template-outlined btn-block mt-5" type="submit" style="max-width: 500px;"><i class="fa fa-sign-in"></i> {% trans "Sign in" %}!</button>                           
+                        </form> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+{% endblock %}

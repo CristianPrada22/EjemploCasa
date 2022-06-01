@@ -1,0 +1,27 @@
+{% load menus %}
+{% load i18n %}
+{% for entry in submenu %}
+    <li class="nav-item {% if entry.children %} dropdown-submenu {% endif %}">
+        <a href="{{ entry.link|default:'#' }}"            
+            {% if entry.children %}
+                id="dropdownMenu2" 
+                 
+                role="button" 
+                data-toggle="dropdown" 
+                aria-haspopup="true" 
+                aria-expanded="false" class="nav-link dropdown-toggle"                        
+            {% endif %}
+             class="nav-link">             
+            {% trans entry.title|safe %}
+        </a>
+        {% if entry.children %}
+        <ul id="item-{{ entry.id }}" class="dropdown-menu">
+            <li>
+                <ul class="list-unstyled">
+                    {% render_submenu entry.children main_children %}
+                </ul>
+            </li>                    
+        </ul>
+        {% endif %}
+    </li>
+{% endfor %}
