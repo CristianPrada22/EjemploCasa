@@ -1,0 +1,180 @@
+[
+    {
+      "model": "hr.Area",
+      "pk": 1,
+      "fields": {
+          "areaName": "Finance",
+          "areaDescription": "Cash flow management",
+          "areaCode": "Fin_01"
+      }
+    },
+    {
+      "model": "hr.Area",
+      "pk": 2,
+      "fields": {
+        "areaName": "HumanResource",
+        "areaDescription": "To obtain and retain a work force whose characteristics are in accordance with the company's objectives, through adequate recruitment, selection, training and development programs.",
+        "areaCode": "Hr_01"
+      }
+    },
+    {
+      "model": "hr.Area",
+      "pk": 3,
+      "fields": {
+        "areaName": "ResearchAndDevelopment",
+        "areaDescription": "Applications development Creation and maintenance of applications on the company's website.",
+        "areaCode": "I+D"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 1,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Controller_01",
+        "title": "Controller Finance",
+        "departament": "1",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Control and supervision of the economic management of the company.",
+        "responsabilities": "Prepare and monitor the annual budget, coordinate audits and communicate the company's financial situation to senior management to facilitate financial decision making.",
+        "skills": "Administration and Finance",
+        "abilities": "Administration and Finance",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Administration and Finance",
+        "annualSalary": "12000"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 2,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Risk_Manage_01",
+        "title": "Risk management specialist",
+        "departament": "1",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Study, analysis and control of the risk of the company's shares.",
+        "responsabilities": "Diagnose business liquidity, indebtedness or problems that may arise from poor financial management.",
+        "skills": "Administration and Finance",
+        "abilities": "Administration and Finance",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Administration and Finance",
+        "annualSalary": "10500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 3,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "HR_oficcer",
+        "title": "Human Resources officer",
+        "departament": "2",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Develop and implement policies related to the effectiveness of the organization's personnel.",
+        "responsabilities": "Promote company values such as equality and diversity, manage payroll, interpret employment laws, dealing with grievances and implementing disciplinary files.",
+        "skills": "Leadership",
+        "abilities": "Leadership",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Labor law, Personnel management.",
+        "annualSalary": "7500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 4,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Recruitment_Researcher_01",
+        "title": "Recruitment Researcher",
+        "departament": "2",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Search and recruit qualified personnel.",
+        "responsabilities": "Search and recruit qualified personnel.",
+        "skills": "Good command of social networks, good domain infojobs.",
+        "abilities": "It requires being up to date in terms of the use of the Internet and social networks in terms of Human Resources.",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Social networks, English",
+        "annualSalary": "4500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 5,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Dev01",
+        "title": "Django Developer",
+        "departament": "3",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Applications development",
+        "responsabilities": "Creation and maintenance of applications on the company's website.",
+        "skills": "Experience working in Agile/Scrum teams Advanced or fluent English (B1) Management of Django Management of Python (Desirable) Management of JavaScript (Desirable) Use of Docker.",
+        "abilities": "Full Stack Developer with experience in the web and the Django framework.",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Experience working in Agile/Scrum teams Advanced or fluent English (B1) Management of Django Management of Python (Desirable) Management of JavaScript (Desirable) Use of Docker.",
+        "annualSalary": "15000"
+      }
+    },
+    {
+      "model": "hr.Recruitment",
+      "pk": 1,
+      "fields": {
+        "requester": "1",
+        "dateOfRequest": "2022-02-09",
+        "startingDate": "2022-02-09",
+        "title": "Recruitment Researcher",
+        "departament": "2",
+        "location": "Villavicencio",
+        "jobDescription": "4",
+        "responsabilities": "Search and recruit qualified personnel.",
+        "numberOfVacancies": "5",
+        "comments": "none"
+      }
+    },
+    {
+      "model": "hr.Recruitment",
+      "pk": 2,
+      "fields": {
+        "requester": "1",
+        "dateOfRequest": "2022-02-09",
+        "startingDate": "2022-02-09",
+        "title": "Django developer required",
+        "departament": "3",
+        "location": "Villavicencio",
+        "jobDescription": "5",
+        "responsabilities": "Support the development of research projects carried out by the company.",
+        "numberOfVacancies": "7",
+        "comments": "English level B2 (desirable).",
+        "requisitionApproved": "True",
+        "approvalsComments": "",
+        "changeInAdverstisement": "False"
+      }
+    },
+    {
+      "model": "hr.Advertisement",
+      "pk": 1,
+      "fields": {
+        "closingDate": "2022-02-19",
+        "companyDescription": "We are a team that provides development of mobile and web application ecosystems accompanied by a backend with high technology and security tools, tailored to the client and with a business architecture that lasts over time.",
+        "contactDetails": "jobsWorks@software.com",
+        "idealCandidate": "HTML / CSS / JS. Python programming language and Django Framework. PostgreSQL Database, MySQL. Rest/Soap API services. Git version control. Agile Scrum methodologies.",
+        "jobDescription": "Design and develop software projects participating in the definition of requirements, adjusting to times and standards of quality and work of the organization.",
+        "jobTitle": "Django/Python Developer",
+        "location": "Villavicencio",
+        "salaryGuide": "Experience and Level of education",
+        "comments": "",
+        "advertisementType": "False"
+      }
+    }
+]

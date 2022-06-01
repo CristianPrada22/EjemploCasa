@@ -1,0 +1,214 @@
+{% extends "indexx.html" %}
+{% load i18n%}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% trans "My account" %}
+{% endblock %}
+
+{% block content %}
+
+<div id="content" class="bg-white m-3 p-3">
+    <div class="container ">
+      <div class="row bar">
+        <div id="customer-account" class="col-lg-9 clearfix">
+            <h3 class="text-uppercase">@{{ request.user.username}} | {{person.name}} {{person.lastName}}</h3> 
+            <hr>
+            <div class="bo3">
+                <div class="heading">
+                  <h3 class="text-uppercase">{% trans "Personal details" %}</h3>
+                </div>
+                <form action="{% url 'user:detail' request.user.username %}" method="POST">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "Name" %}</label>
+                                <input
+                                    class="form-control {% if form.name.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="name"
+                                    placeholder="{% trans 'Enter your name' %}"
+                                    value="{% if form.errors %}{{ form.name.value }}{% else %}{{ person.name }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.name.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "Last Name" %}</label>
+                                <input
+                                    class="form-control {% if form.lastName.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="lastName"
+                                    placeholder="{% trans 'Enter your last name' %}"
+                                    value="{% if form.errors %}{{ form.lastName.value }}{% else %}{{ person.lastName }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.lastName.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "E-mail" %}</label>
+                                <input
+                                    class="form-control {% if form.email.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="email"
+                                    placeholder="{% trans 'Enter your E-mail' %}"
+                                    value="{% if form.errors %}{{ form.email.value }}{% else %}{{ person.email }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.email.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "Age" %}</label>
+                                <input
+                                    class="form-control {% if form.Age.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="Age"
+                                    placeholder="{% trans 'Enter your age' %}"
+                                    value="{% if form.errors %}{{ form.Age.value }}{% else %}{{ person.Age }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.Age.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label for="firstname">{% trans "Identification Card" %}</label>
+                                <input
+                                    class="form-control {% if form.cc.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="cc"
+                                    placeholder="{% trans 'Enter your ID number' %}"
+                                    value="{% if form.errors %}{{ form.cc.value }}{% else %}{{ person.cc }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.cc.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "Phone number" %}</label>
+                                <input
+                                    class="form-control {% if form.cellphone.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="cellphone"
+                                    placeholder="{% trans 'Enter your cell phone number' %}"
+                                    value="{% if form.errors %}{{ form.cellphone.value }}{% else %}{{ person.cellphone }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.cellphone.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="form-group">
+                                <label>{% trans "Address" %}</label>
+                                <input
+                                    class="form-control {% if form.home_address.errors %}is-invalid{% endif %}"
+                                    type="text"
+                                    name="home_address"
+                                    placeholder="{% trans 'Enter your home address' %}"
+                                    value="{% if form.errors %}{{ form.home_address.value }}{% else %}{{ person.home_address }}{% endif %}"
+                                />
+                                <div class="invalid-feedback">
+                                    {% for error in form.address.errors %}
+                                        {{ error }}
+                                    {% endfor%}
+                                </div>
+                            </div>
+                        </div>
+                    </div>              
+                    <div class="col-md-12 text-center">
+                        <button type="submit" class="btn btn-template-outlined"><i class="fa fa-save"></i>{% trans "Save changes" %}</button>
+                    </div>              
+                </form>
+            </div>
+            <div class="box mt-5">
+                <div class="heading">
+                  <h3 class="text-uppercase">{% trans "Your Orders" %}</h3>
+                </div>
+                <div class="site-blocks-table">
+                    <table class="table">
+                        <thead>
+                            <tr>
+                                <th>{% trans "Reference No." %}</th>
+                                <th>{% trans "Date" %}</th>
+                                <th>{% trans "Amount" %}</th>
+                                <th>{% trans "Payment Status" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for order in orders %}
+                            <tr>
+                                <a href="#"><td>#{{ order.reference_number }}</td></a>
+                                <td>{{ order.ordered_date }}</td>
+                                <td>{{ order.get_total }}</td>
+                                <td>{% if order.ordered %}{% trans "Paid" %}{% else %}{% trans "Not paid" %}{% endif %}</td>
+                            </tr>
+                            {% empty %}
+                            <tr>
+                                <td colspan="4">{% trans "You haven't made any purchases" %}</td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div class="col-lg-3 mt-4 mt-lg-0">
+          <!-- CUSTOMER MENU -->
+          <div class="panel panel-default sidebar-menu">
+            <div class="panel-heading">
+              <h3 class="h4 panel-title">{% trans "Customer section" %}</h3>
+            </div>
+            <div class="panel-body">
+              <ul class="nav nav-pills flex-column text-sm">
+                <li class="nav-item">
+                    <a href="#" class="nav-link ">
+                        <i class="fa fa-sliders"></i>
+                        {% trans "Settings" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'user:detail' request.user.username %}" class="nav-link">
+                        <i class="fa fa-user"></i>
+                        {% trans "My account" %}
+                    </a>
+                </li>
+                <li class="nav-item">
+                    <a href="{% url 'user:logout' %}" class="nav-link">
+                        <i class="fa fa-sign-out"></i>
+                        {% trans "Logout" %}
+                    </a>
+                </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+{% endblock %}

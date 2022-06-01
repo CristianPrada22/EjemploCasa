@@ -1,0 +1,261 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% trans "Select Candidate" %}
+{% endblock title %}
+
+{% block content %}
+<div class="container bg-white pt-2 pb-2 mt-3 mb-3">
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#recruitmentRequest" aria-expanded="true" aria-controls="recruitmentRequest">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Personel Requisition Form" %}
+            </a>
+        </h3>
+    </div>
+    <div id="recruitmentRequest" class="collapse show">
+        <div class="card card-body">
+            <div class="row">
+                <div class="form-group col row">
+                    <label for="dateRequest" class="font-weight-bold col-sm-5 col-form-label">{% trans "Date of request" %}:</label>
+                    <div class="col-sm-7 p-1">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="dateOfRequest" value="{{selectC.dateOfRequest}}">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="requester" class="font-weight-bold col-sm-3 col-form-label p-1">{% trans "Requester" %}:</label>
+                    <div class="col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="requester" value="{{selectC.requester}}">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="departament" class="font-weight-bold col-sm-5 col-form-label p-1">{% trans "Departament" %}:</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="departament" value="{{selectC.departament}}">
+                    </div>
+                </div>
+            </div>
+            <div class="row">
+                <div class="form-group col row">
+                    <label for="startingDate" class="font-weight-bold col-sm-5 col-form-label">{% trans "Starting date" %}:</label>
+                    <div class="col-sm-7 p-1">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="startingDate" value="{{selectC.startingDate}}">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="title" class="font-weight-bold col-sm-3 col-form-label p-1">{% trans "Title" %}:</label>
+                    <div class="col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="title" value="{{selectC.title}}">
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="vacancies" class="font-weight-bold col-sm-5 col-form-label p-1">{% trans "Number of vacancies" %}:</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="numberOfVacancies" value="{{selectC.numberOfVacancies}}">
+                    </div>
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="responsabilities" class="font-weight-bold col-sm-2 col-form-label">{% trans "Responsabilities" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="responsabilities" value="{{selectC.responsabilities}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="location" class="font-weight-bold col-sm-2 col-form-label">{% trans "Location" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="location" value="{{selectC.location}}">
+                </div>
+            </div>
+            <div class="form-group row">
+                <label for="comments" class="font-weight-bold col-sm-2 col-form-label">{% trans "Comments" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="comments" value="{{selectC.comments}}">
+                </div>
+            </div>
+            <br>
+            <a href="#recruitmentRequest" id="shm" onclick="show(this);">Show more</a>
+            <div class="d-none" id="show">
+                <div class="form-group row">
+                    <label for="comments" class="font-weight-bold col-sm-2 col-form-label">{% trans "Skills" %}:</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="skills" value="{{jobD.skills}}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="comments" class="font-weight-bold col-sm-2 col-form-label">{% trans "Abilities" %}:</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="abilities" value="{{jobD.abilities}}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="comments" class="font-weight-bold col-sm-2 col-form-label">{% trans "Experience" %}:</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="experience" value="{{jobD.experience}}">
+                    </div>
+                </div>
+                <div class="form-group row">
+                    <label for="comments" class="font-weight-bold col-sm-2 col-form-label">{% trans "Education Requirements" %}:</label>
+                    <div class="col-sm-10">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="educationRequirements" value="{{jobD.educationRequirements}}">
+                    </div>
+                </div>
+                <a href="#recruitmentRequest" id="shl" onclick="hide();">Show less</a>
+            </div>
+            
+        </div>
+    </div>
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#ApprovalInformation" aria-expanded="true" aria-controls="ApprovalInformation">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Approval Information" %}
+            </a>
+        </h3>
+    </div>
+    <div id="ApprovalInformation" class="collapse show">
+        <div class="card card-body">
+            <div class="row">
+                <div class="form-group col row">
+                    <label for="requisitionApproved" class="font-weight-bold col-sm-5 col-form-label">{% trans "Requisition Approval" %}:</label>
+                    <div class="col-sm-7 p-1">
+                        {% if selectC.requisitionApproved %} 
+                            <input type="text" readonly class="form-control-plaintext font-weight-light" id="requisitionApproved" value="Yes">
+                        {% else %}
+                            <input type="text" readonly class="form-control-plaintext font-weight-light" id="requisitionApproved" value="No">
+                        {% endif %}
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="approvalsComments" class="font-weight-bold col-sm-3 col-form-label p-1">{% trans "Approvals Comments" %}:</label>
+                    <div class="col-sm-9">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="approvalsComments" value="{{selectC.approvalsComments}}">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#JobVacancyAdvertisement" aria-expanded="true" aria-controls="JobVacancyAdvertisement">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Recruitment Information" %}
+            </a>
+        </h3>
+    </div>
+    <div id="JobVacancyAdvertisement" class="collapse show">
+        <div class="card card-body">
+            <div class="row"> 
+                <div class="form-group col row">
+                    <label for="id_advertisementType" class="font-weight-bold col-sm-1.5 col-form-label p-1">{% trans "Advertisement Type" %}:</label>
+                    <div class="col-sm-5">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="advertisementType" value="{{advertisement.advertisementType}}">  
+                    </div>
+                </div>
+                <div class="form-group col row">
+                    <label for="id_closingDate" class="font-weight-bold col-sm-4 col-form-label p-1">{% trans "Closing date" %}:</label>
+                    <div class="col-sm-7">
+                        <input type="text" readonly class="form-control-plaintext font-weight-light" id="closingDate" value="{{advertisement.closingDate}}"> 
+                    </div>
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_comments" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Comments" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="comments" value="{{advertisement.comments}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card card-header p-0 mb-0 mt-2">
+        <h3>
+            <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#adInformation" aria-expanded="true" aria-controls="adInformation">
+                <i class="fa fa-angle-down mr-1"></i>{% trans "Ad information" %}
+            </a>
+        </h3>
+    </div>
+    <div id="adInformation" class="collapse show">
+        <div class="card card-body">
+            <div class="form-group col row">
+                <label for="id_jobTitle" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Job Title" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="jobTitle" value="{{advertisement.jobTitle}}">
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_jobDescription" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Job Description" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="jobDescription" value="{{advertisement.jobDescription}}">
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_idealCandidate" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Ideal candidate" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="idealCandidate" value="{{advertisement.idealCandidate}}">
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_location" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Location" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="location" value="{{advertisement.location}}">
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_salaryGuide" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Salary guide" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="salaryGuide" value="{{advertisement.salaryGuide}}">
+                </div>
+            </div>
+            <div class="form-group col row">
+                <label for="id_contactDetails" class="font-weight-bold col-sm-2 col-form-label p-1">{% trans "Contact Details" %}:</label>
+                <div class="col-sm-10">
+                    <input type="text" readonly class="form-control-plaintext font-weight-light" id="contactDetails" value="{{advertisement.contactDetails}}">
+                </div>
+            </div>
+        </div>
+    </div>
+    <form action="" method="post">
+        {% csrf_token %}
+        <div class="card card-header p-0 mb-0 mt-2">
+            <h3>
+                <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#candidates" aria-expanded="true" aria-controls="candidates">
+                    <i class="fa fa-angle-down mr-1"></i>{% trans "Candidates" %}
+                </a>
+            </h3>
+        </div>
+        <div id="candidates" class="collapse show">
+            <div class="card card-body">
+                <div class="form-group col row">
+                    <table class="table table-bordered">
+                        <thead>
+                            <tr class="d-flex">
+                                <th class="col-3">{% trans "Name" %}</th>
+                                <th class="col-3">{% trans "Last Name" %}</th>
+                                <th class="col-3">{% trans "Email" %}</th>
+                                <th class="col-2">{% trans "Cellphone" %}</th>
+                                <th class="col-1">{% trans "CV" %}</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            {% for candidate in candidates %}
+                            <tr class="d-flex">
+                                <td class="col-3">{{candidate.name}}</td>
+                                <td class="col-3">{{candidate.lastName}}</td>
+                                <td class="col-3">{{candidate.email}}</td>
+                                <td class="col-2">{{candidate.cellphone}}</td>
+                                <td class="col-1">
+                                    <a href="/media/{{candidate.cv}}" target="_blank"><i class="fa fa-solid fa-file"></i></a>
+                                </td>
+                            </tr>
+                            {% endfor %}
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        </div>
+        <div id="btn_save" class="d-flex col-md-12 justify-content-center">
+            <input type="submit" class="btn btn-md bg-gray w-25" value="{% trans 'Save' %}">
+        </div>
+    </form>
+</div>
+{% endblock content %}
