@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% block title %}
+    {% trans "Request List" %}
+{% endblock title %}
+
+{% block content %}
+
+<div class="site-section m-3 p-3">
+    <div class="container bg-white">
+        <div class="row mb-5">
+            <table class="table table-bordered">
+                <thead>
+                  <tr>
+                    <th scope="col">{% trans "Requester" %}</th>
+                    <th scope="col">{% trans "Departament" %}</th>
+                    <th scope="col">{% trans "Job Description" %}</th>
+                    <th scope="col">{% trans "Responsabilities" %}</th>
+                    <th scope="col">{% trans "Requisition Approved" %}</th>
+                  </tr>
+                </thead>
+                <tbody>          
+                {% for reqList in reqList %}
+                  <tr>
+                    <td>{{reqList.requester}}</td>
+                    <td>{{reqList.departament}}</td>
+                    <td>{{reqList.jobDescription}}</td>
+                    <td>{{reqList.responsabilities}}</td>
+                    <td>
+                      {% if reqList.requisitionApproved is False %}
+                        No
+                      {% else %}
+                        {% trans "Yes" %}
+                      {% endif %}
+                    </td>
+                  </tr>
+                {% endfor %}
+                </tbody>
+            </table>                   
+        </div>
+    </div>
+</div>
+{% endblock content %}
