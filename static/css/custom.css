@@ -1,0 +1,9 @@
+/* your styles go here */ 
+
+/* img payment - product detail view */
+
+.pay-method .lcredibanco{
+    max-width: 105px !important;
+    width: 104px;
+    height: 32px;
+}

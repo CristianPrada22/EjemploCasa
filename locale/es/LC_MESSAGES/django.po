@@ -1,0 +1,1723 @@
+# SOME DESCRIPTIVE TITLE.
+# Copyright (C) YEAR THE PACKAGE'S COPYRIGHT HOLDER
+# This file is distributed under the same license as the PACKAGE package.
+# FIRST AUTHOR <EMAIL@ADDRESS>, YEAR.
+#
+#, fuzzy
+msgid ""
+msgstr ""
+"Project-Id-Version: PACKAGE VERSION\n"
+"Report-Msgid-Bugs-To: \n"
+"POT-Creation-Date: 2022-05-03 12:46-0500\n"
+"PO-Revision-Date: YEAR-MO-DA HO:MI+ZONE\n"
+"Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
+"Language-Team: LANGUAGE <LL@li.org>\n"
+"Language: \n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=(n != 1);\n"
+
+#: Menus/models.py:16
+msgid "Same window"
+msgstr "La misma ventana"
+
+#: Menus/models.py:17
+msgid "New window"
+msgstr "Nueva ventana"
+
+#: Menus/models.py:36
+msgid ""
+"Defines if the root menu item should be hidden (a menu always have exactly "
+"one root menu item)."
+msgstr ""
+"Define si el elemento de menú raíz debe estar oculto (un menú siempre tiene "
+"exactamente un elemento de menú raíz)"
+
+#: Menus/models.py:41
+msgid ""
+"Defines the default expansion level of the menu. Use e.g. 2 to show the "
+"first two levels in the menu. A value of 0 shows the entire menu. This field "
+"can be overridden by the template."
+msgstr ""
+"Define el nivel de expansión por defecto del menú. Utilice, por ejemplo, 2 "
+"para mostrar los dos primeros niveles del menú. Un valor de 0 muestra todo "
+"el menú. Este campo puede ser anulado por la plantilla."
+
+#: Menus/models.py:45
+msgid ""
+"Defines the maximum number of levels allowed in the menu. A value of 0 means "
+"no limits. This field can be overridden by the template."
+msgstr ""
+"Define el número máximo de niveles permitidos en el menú. Un valor de 0 "
+"significa que no hay límites. Este campo puede ser anulado por la plantilla."
+
+#: Menus/models.py:68
+msgid ""
+"Use lower-case letters only. Local links should start with forward slash, "
+"and normally ends with slash - eg /science/. Remote links should be full "
+"URLs - eg http://www.cnn.com/. The field can be left empty, in which case "
+"the menu item won't be linked."
+msgstr ""
+"Utilice sólo letras minúsculas. Los enlaces locales deben comenzar con una "
+"barra oblicua y normalmente terminan con una barra - por ejemplo,  /"
+"ciencia/. Los enlaces remotos deben ser URLs completas - por ejemplo,  "
+"http://www.cnn.com/. El campo puede dejarse vacío, en cuyo caso el elemento "
+"del menú no se enlazará."
+
+#: Menus/models.py:77
+msgid "This field only have effect for the root menu item"
+msgstr "Este campo sólo tiene efecto para el elemento de menú raíz"
+
+#: Menus/models.py:79
+msgid ""
+"Moving a node to a new parent, will place it as the last node. When moving a "
+"menu item, all of it sub-items will be moved as well."
+msgstr ""
+"Mover un nodo a un nuevo padre, lo colocará como el último nodo. Al mover un "
+"elemento del menú, todos sus sub-elementos se moverán también."
+
+#: Menus/models.py:86
+msgid ""
+"In case a menu contains several items with the same link, set this field to "
+"true and the others menu items field to false, to control which item is used "
+"for item highlighting and breadcrumb generation."
+msgstr ""
+"En caso de que un menú contenga varios elementos con el mismo enlace, "
+"establezca este campo como verdadero y el campo de los otros elementos del "
+"menú como falso, para controlar qué elemento se utiliza para el resaltado de "
+"elementos y la generación de migas de pan."
+
+#: Menus/templatetags/menus.py:51 Menus/templatetags/menus.py:168
+#, python-format
+msgid "Couldn't resolve menu variable: %s"
+msgstr "No se ha podido resolver la variable del menú: %s"
+
+#: Menus/templatetags/menus.py:166
+msgid "The menu does not exists"
+msgstr "El menú no existe"
+
+#: Menus/templatetags/menus.py:170
+#, python-format
+msgid "The template %(tpl)s does not exists: %(msg)s"
+msgstr "La plantilla %(tpl)s no existe: %(msg)s"
+
+#: Menus/templatetags/menus.py:172
+#, python-format
+msgid "The template %(tpl)s had syntax errors: %(msg)s"
+msgstr ""
+
+#: Menus/templatetags/menus.py:174 pages/templatetags/pages.py:51
+msgid "An unknown error occurred."
+msgstr "La plantilla %(tpl)s tenía errores de sintaxis: %(msg)s"
+
+#: Menus/templatetags/menus.py:232 Menus/templatetags/menus.py:280
+#, python-format
+msgid "'%r' tag requires 1 or 2 arguments."
+msgstr "La etiqueta '%r' requiere 1 o 2 argumentos."
+
+#: Menus/templatetags/menus.py:305
+#, python-format
+msgid "%r tag requires arguments"
+msgstr "La etiqueta %r requiere argumentos"
+
+#: Menus/templatetags/menus.py:308
+#, python-format
+msgid "%r tag had invalid arguments"
+msgstr "La etiqueta %r tenía argumentos no válidos"
+
+#: article/models.py:13 article/models.py:37 hr/forms.py:189
+#: hr/templates/receiveCVs.html:18 hr/templates/selectInitialCandidate.html:232
+#: pages/models.py:80 shop/forms.py:10 shop/models.py:60 user/models.py:21
+#: user/templates/detail.html:25 user/templates/update_profile.html:24
+msgid "Name"
+msgstr "Nombre"
+
+#: article/models.py:15 shop/models.py:62
+msgid "Name of category or subcategory"
+msgstr "Nombre de la categoría o la subcategoría"
+
+#: article/models.py:19 shop/models.py:66
+msgid "Parent"
+msgstr "Padre"
+
+#: article/models.py:31 article/models.py:80 shop/models.py:85
+msgid "Category"
+msgstr "Categoría"
+
+#: article/models.py:32 shop/models.py:86
+msgid "Categories"
+msgstr "Categorías"
+
+#: article/models.py:39
+msgid "Name of the articles"
+msgstr "Nombre del artículo"
+
+#: article/models.py:42 hr/forms.py:37 hr/forms.py:75 hr/models.py:79
+#: hr/models.py:171 hr/templates/approveRequest.html:61
+#: hr/templates/jobDescription.html:48
+#: hr/templates/jobVacancyAdvertisement.html:48
+#: hr/templates/selectInitialCandidate.html:48 pages/models.py:107
+#: shop/models.py:103
+msgid "Title"
+msgstr "Título"
+
+#: article/models.py:44
+msgid "Title of the  news or articles"
+msgstr "Título de las noticias o artículos"
+
+#: article/models.py:47
+msgid "Abstract"
+msgstr ""
+
+#: article/models.py:49
+msgid "Here you must write the abstract of the articles"
+msgstr "Aquí debes escribir el resumen del artículo"
+
+#: article/models.py:52 pages/models.py:119
+msgid "Content"
+msgstr "Contenido"
+
+#: article/models.py:53
+msgid "Here you must write the description of the article or news."
+msgstr "Aquí debes escribir la descripción del artículo o noticia"
+
+#: article/models.py:56
+msgid "Notes"
+msgstr "Notas"
+
+#: article/models.py:57
+msgid "Here you must write the notes of the article or news."
+msgstr "Aquí debes escribir las notas del artículo o noticia."
+
+#: article/models.py:60
+msgid "Links"
+msgstr "Enlaces"
+
+#: article/models.py:61
+msgid "Here you must write the links of the article or news."
+msgstr "Aquí debes escribir los enlaces del artículo o noticia."
+
+#: article/models.py:64
+msgid "More information"
+msgstr "Más información"
+
+#: article/models.py:65
+msgid "Here you must write the More information of the article or news."
+msgstr "Aquí debes escribir el 'Más información' del artículo o noticia."
+
+#: article/models.py:68
+msgid "Contacts"
+msgstr "Contactos"
+
+#: article/models.py:69
+msgid "Here you must write the contacts."
+msgstr "Aquí debes escribir los contactos."
+
+#: article/models.py:72
+msgid "Tags"
+msgstr "Etiquetas"
+
+#: article/models.py:73
+msgid "Here you must write the tags."
+msgstr "Aquí debes escribir las etiquetas."
+
+#: article/models.py:86 shop/models.py:121 shop/templates/cart.html:18
+msgid "Image"
+msgstr "Imagen"
+
+#: article/models.py:89
+msgid "Date created"
+msgstr "Fecha de creación"
+
+#: article/models.py:92
+msgid "Date updated"
+msgstr "Fecha de actualización"
+
+#: article/models.py:95 shop/models.py:141
+msgid "Active"
+msgstr "Activo"
+
+#: article/models.py:97
+msgid "Field to know if the article is active or not active"
+msgstr "Campo para saber si el artículo está activo o no"
+
+#: article/models.py:102
+msgid "Article"
+msgstr "Artículo"
+
+#: article/models.py:103
+msgid "Articles"
+msgstr "Artículos"
+
+#: article/templates/news_detail.html:5
+msgid "Article detail"
+msgstr "Detalle del artículo"
+
+#: article/templates/news_list.html:34
+msgid "Read more"
+msgstr "Leer más"
+
+#: article/templates/news_list.html:49 article/templates/news_list.html:82
+#: shop/templates/pagination.html:7 shop/templates/pagination.html:40
+msgid "Previous"
+msgstr "Anterior"
+
+#: article/templates/news_list.html:75 article/templates/news_list.html:85
+#: shop/templates/pagination.html:33 shop/templates/pagination.html:43
+msgid "Next"
+msgstr "Siguiente"
+
+#: hr/forms.py:34 hr/models.py:67
+msgid "Created by"
+msgstr "Creado por"
+
+#: hr/forms.py:35 hr/models.py:72
+msgid "Creation date"
+msgstr "Fecha de creación"
+
+#: hr/forms.py:36 hr/models.py:75
+msgid "Code"
+msgstr "Código"
+
+#: hr/forms.py:38 hr/forms.py:71 hr/models.py:86 hr/models.py:155
+#: hr/templates/approveRequest.html:34 hr/templates/jobDescription.html:34
+#: hr/templates/jobVacancyAdvertisement.html:34
+#: hr/templates/requestList.html:16 hr/templates/selectInitialCandidate.html:34
+msgid "Departament"
+msgstr "Departamento"
+
+#: hr/forms.py:39 hr/models.py:89
+msgid "Report to"
+msgstr "Reportar a"
+
+#: hr/forms.py:40 hr/forms.py:72 hr/forms.py:149 hr/models.py:93
+#: hr/models.py:95 hr/models.py:128 hr/models.py:162 hr/models.py:229
+msgid "Job description"
+msgstr "Descripción de trabajo"
+
+#: hr/forms.py:41 hr/forms.py:76 hr/models.py:97 hr/models.py:175
+#: hr/templates/approveRequest.html:67 hr/templates/jobDescription.html:61
+#: hr/templates/jobVacancyAdvertisement.html:61
+#: hr/templates/requestList.html:18 hr/templates/selectInitialCandidate.html:61
+msgid "Responsabilities"
+msgstr "Responsabilidades"
+
+#: hr/forms.py:42 hr/models.py:101 hr/templates/selectInitialCandidate.html:82
+msgid "Skills"
+msgstr ""
+
+#: hr/forms.py:43 hr/models.py:105 hr/templates/selectInitialCandidate.html:88
+msgid "Abilities"
+msgstr "Habilidades"
+
+#: hr/forms.py:44 hr/models.py:109 hr/templates/selectInitialCandidate.html:94
+msgid "Experience"
+msgstr "Experiencia"
+
+#: hr/forms.py:45 hr/models.py:113
+msgid "Education requirements"
+msgstr "Requisitos de educación"
+
+#: hr/forms.py:46 hr/models.py:117
+msgid "Knowledge"
+msgstr "Conocimientos"
+
+#: hr/forms.py:47 hr/models.py:121
+msgid "Annual salary"
+msgstr "Salario anual"
+
+#: hr/forms.py:69 hr/models.py:144 hr/templates/approveRequest.html:28
+#: hr/templates/jobDescription.html:28
+#: hr/templates/jobVacancyAdvertisement.html:28
+#: hr/templates/requestList.html:15 hr/templates/selectInitialCandidate.html:28
+msgid "Requester"
+msgstr "Solicitante"
+
+#: hr/forms.py:70 hr/models.py:149 hr/templates/approveRequest.html:22
+#: hr/templates/jobDescription.html:22
+#: hr/templates/jobVacancyAdvertisement.html:22
+#: hr/templates/selectInitialCandidate.html:22
+msgid "Date of request"
+msgstr "Fecha de solicitud"
+
+#: hr/forms.py:73 hr/models.py:165 hr/templates/approveRequest.html:42
+#: hr/templates/jobDescription.html:42
+#: hr/templates/jobVacancyAdvertisement.html:42
+#: hr/templates/selectInitialCandidate.html:42
+msgid "Starting date"
+msgstr "Fecha de inicio"
+
+#: hr/forms.py:74 hr/models.py:168 hr/templates/approveRequest.html:54
+#: hr/templates/jobDescription.html:54
+#: hr/templates/jobVacancyAdvertisement.html:54
+#: hr/templates/selectInitialCandidate.html:54
+msgid "Number of vacancies"
+msgstr "Número de vacantes"
+
+#: hr/forms.py:77 hr/forms.py:161 hr/models.py:24 hr/models.py:179
+#: hr/models.py:237 hr/templates/approveRequest.html:48
+#: hr/templates/jobDescription.html:67
+#: hr/templates/jobVacancyAdvertisement.html:67
+#: hr/templates/jobVacancyAdvertisement.html:171
+#: hr/templates/selectInitialCandidate.html:67
+#: hr/templates/selectInitialCandidate.html:198
+msgid "Location"
+msgstr "Ubicación"
+
+#: hr/forms.py:78 hr/forms.py:173 hr/models.py:183 hr/models.py:245
+#: hr/templates/approveRequest.html:73 hr/templates/jobDescription.html:73
+#: hr/templates/jobVacancyAdvertisement.html:73
+#: hr/templates/jobVacancyAdvertisement.html:136
+#: hr/templates/selectInitialCandidate.html:73
+#: hr/templates/selectInitialCandidate.html:163
+msgid "Comments"
+msgstr "Comentarios"
+
+#: hr/forms.py:85 hr/forms.py:233 hr/templates/requestList.html:33
+msgid "Yes"
+msgstr "Sí"
+
+#: hr/forms.py:90 hr/models.py:188
+msgid "Requisition approved"
+msgstr "Solicitud aprovada"
+
+#: hr/forms.py:96 hr/forms.py:99 hr/models.py:192
+msgid "Approvals comments"
+msgstr "Comentarios de aprobación"
+
+#: hr/forms.py:106
+msgid "Approval comments is required"
+msgstr "El comentario de aprobación es obligatorio"
+
+#: hr/forms.py:114
+msgid "Internal"
+msgstr "Interno"
+
+#: hr/forms.py:115
+msgid "External"
+msgstr "Externo"
+
+#: hr/forms.py:119 hr/templates/jobVacancyAdvertisement.html:123
+#: hr/templates/selectInitialCandidate.html:150
+msgid "Advertisement Type"
+msgstr "Tipo de anuncio"
+
+#: hr/forms.py:125 hr/models.py:214
+#: hr/templates/jobVacancyAdvertisement.html:129
+#: hr/templates/selectInitialCandidate.html:156
+msgid "Closing date"
+msgstr "Fecha de cierre"
+
+#: hr/forms.py:127
+msgid "YYYY-MM-DD"
+msgstr ""
+
+#: hr/forms.py:131 hr/models.py:217
+msgid "Company description"
+msgstr "Descripción de la empresa"
+
+#: hr/forms.py:134
+msgid "Enter your company description"
+msgstr "Ingrese la descripción de la empresa"
+
+#: hr/forms.py:137 hr/models.py:221
+msgid "Contact details"
+msgstr "Detalles de contacto"
+
+#: hr/forms.py:140
+msgid "Enter your contact details"
+msgstr "Ingresa tu información de contacto"
+
+#: hr/forms.py:143 hr/models.py:225
+#: hr/templates/jobVacancyAdvertisement.html:165
+#: hr/templates/selectInitialCandidate.html:192
+msgid "Ideal candidate"
+msgstr "Candidato ideal"
+
+#: hr/forms.py:146
+msgid "Enter the characteristics of the ideal candidate "
+msgstr "Ingrese las características del candidato ideal"
+
+#: hr/forms.py:152
+msgid "Enter job description"
+msgstr "Ingrese la descripción de trabajo"
+
+#: hr/forms.py:155 hr/models.py:233
+msgid "Job title"
+msgstr "Título del trabajo"
+
+#: hr/forms.py:158
+msgid "Enter job title"
+msgstr "Ingrese el título del trabajo"
+
+#: hr/forms.py:164
+msgid "Enter work location"
+msgstr "Ingrese la ubicación del trabajo"
+
+#: hr/forms.py:167 hr/models.py:241
+#: hr/templates/jobVacancyAdvertisement.html:177
+#: hr/templates/selectInitialCandidate.html:204
+msgid "Salary guide"
+msgstr "Guia salarial"
+
+#: hr/forms.py:170
+msgid "Enter salary guide"
+msgstr "Ingrese la guia salarial"
+
+#: hr/forms.py:176
+msgid "Enter aditional comments"
+msgstr "Ingrese comentarios adicionales"
+
+#: hr/forms.py:182
+msgid "Company Description is required"
+msgstr "La descripción de la empresa es obligatorio"
+
+#: hr/forms.py:192 user/models.py:24 user/templates/detail.html:30
+#: user/templates/update_profile.html:29
+msgid "Enter your name"
+msgstr "Ingresa tu nombre"
+
+#: hr/forms.py:195 hr/templates/selectInitialCandidate.html:233
+#: user/templates/detail.html:42 user/templates/update_profile.html:40
+msgid "Last Name"
+msgstr "Apellido"
+
+#: hr/forms.py:197 user/models.py:29 user/templates/detail.html:47
+#: user/templates/update_profile.html:45
+msgid "Enter your last name"
+msgstr "Ingresa tu apellido"
+
+#: hr/forms.py:200 hr/templates/receiveCVs.html:32 user/models.py:16
+msgid "CC"
+msgstr "CC"
+
+#: hr/forms.py:202
+msgid "Enter your #ID"
+msgstr "Ingresa tu número de identificación"
+
+#: hr/forms.py:205 hr/templates/receiveCVs.html:46 user/models.py:31
+#: user/templates/detail.html:59 user/templates/update_profile.html:72
+msgid "E-mail"
+msgstr "Correo"
+
+#: hr/forms.py:207 user/templates/detail.html:64
+msgid "Enter your E-mail"
+msgstr "Ingresa tu correo"
+
+#: hr/forms.py:210 hr/templates/receiveCVs.html:54
+#: hr/templates/selectInitialCandidate.html:235 user/models.py:41
+msgid "Cellphone"
+msgstr "Celular"
+
+#: hr/forms.py:212
+msgid "Enter your cellphone"
+msgstr "Ingresa tu número de celular"
+
+#: hr/forms.py:215 user/models.py:46
+msgid "Home address"
+msgstr "Dirección de la casa"
+
+#: hr/forms.py:217 user/models.py:49 user/templates/detail.html:132
+#: user/templates/update_profile.html:110
+msgid "Enter your home address"
+msgstr "Inresa tu dirección de la casa"
+
+#: hr/forms.py:220 hr/templates/receiveCVs.html:38 user/models.py:51
+#: user/templates/detail.html:76 user/templates/update_profile.html:122
+msgid "Age"
+msgstr "Edad"
+
+#: hr/forms.py:222 user/templates/detail.html:81
+msgid "Enter your age"
+msgstr "Ingresa tu edad"
+
+#: hr/forms.py:238 hr/models.py:197 hr/models.py:199
+msgid "Change In Adverstisement Need?"
+msgstr "¿Se necesita hacer un cambio en el anuncio?"
+
+#: hr/models.py:9
+msgid "Inteview date"
+msgstr "Fecha de la entrevista"
+
+#: hr/models.py:10
+msgid "Enter the interview date "
+msgstr "Ingresa la fecha de la entrevista"
+
+#: hr/models.py:12
+msgid "Interview file"
+msgstr "Archivo de la entrevista"
+
+#: hr/models.py:14
+msgid "Add interview file"
+msgstr "Agregar archivo de la entrevista"
+
+#: hr/models.py:16
+msgid "Interview performance"
+msgstr "Rendimiento de la entrevista"
+
+#: hr/models.py:18
+msgid "Interview performance OK?"
+msgstr "¿Paso el rendimiento de la entrevista?"
+
+#: hr/models.py:20
+msgid "Interview results"
+msgstr "Resultado de la entrevista"
+
+#: hr/models.py:22
+msgid "Enter the interview results"
+msgstr "Ingrese los resultados de la entrevista"
+
+#: hr/models.py:26
+msgid "Enter Location"
+msgstr "Ingrese la ubicación"
+
+#: hr/models.py:29
+msgid "Interview"
+msgstr "Entrevista"
+
+#: hr/models.py:30
+msgid "Interviews"
+msgstr "Entrevistas"
+
+#: hr/models.py:38
+msgid "Area name"
+msgstr "Nombre del área"
+
+#: hr/models.py:40
+msgid "Department/Area name"
+msgstr "Nombre del área/departamento"
+
+#: hr/models.py:42
+msgid "Area description"
+msgstr "Descripción del área"
+
+#: hr/models.py:44
+msgid "Description of the department/area"
+msgstr "Descripción del departamento/área"
+
+#: hr/models.py:46
+msgid "Area Code"
+msgstr "Código de área"
+
+#: hr/models.py:48
+msgid "Department/Area code"
+msgstr "Codigo de departamento/área"
+
+#: hr/models.py:51
+msgid "Area"
+msgstr "Área"
+
+#: hr/models.py:52
+msgid "Areas"
+msgstr "Áreas"
+
+#: hr/models.py:70
+msgid "User creating the job description"
+msgstr "Usuario quien creo la descripción de trabajo"
+
+#: hr/models.py:73
+msgid "Creation date for job description"
+msgstr "Fecha de creación para la descripción de trabajo"
+
+#: hr/models.py:77
+msgid "ID of the job description"
+msgstr "ID de la descripción de trabajo"
+
+#: hr/models.py:81
+msgid "Title/name of the job description"
+msgstr "Título/Nombre de la descripción de trabajo"
+
+#: hr/models.py:87
+msgid "Department/Area associated with the job description"
+msgstr "Departamento/Área asociada con la descripción de trabajo"
+
+#: hr/models.py:91
+msgid "Immediate supervisor associated with the job description"
+msgstr "Supervisor inmediato asociado con la descripción de trabajo"
+
+#: hr/models.py:99 hr/models.py:177
+msgid "Job functions"
+msgstr "Fuciones del trabajo"
+
+#: hr/models.py:103
+msgid "The capacities to perform tasks that you are developed"
+msgstr "Las capacidades para realizar las tareas que puedes desarrollar"
+
+#: hr/models.py:107
+msgid "Talents you are born with."
+msgstr "Talentos con los que naces"
+
+#: hr/models.py:111
+msgid "Time of experience on the job"
+msgstr "Tiempo de experiencia en el trabajo"
+
+#: hr/models.py:115
+msgid "Level of education required"
+msgstr "Nivel de educación requerido"
+
+#: hr/models.py:119
+msgid "Knowledge required for the job"
+msgstr "Conocimientos requeridos para el trabajo"
+
+#: hr/models.py:125
+msgid "Approximate annual salary"
+msgstr "Salario anual aproximado"
+
+#: hr/models.py:129
+msgid "Job descriptions"
+msgstr "Descripción de trabajo"
+
+#: hr/models.py:147
+msgid "User who created the request"
+msgstr "Usuario que creo la solicitud"
+
+#: hr/models.py:150
+msgid "Date of recruitment request"
+msgstr "Fecha solicitud de reclutamiento"
+
+#: hr/models.py:156
+msgid "Department/Area that require the recruitment"
+msgstr "Departamento/Área que solicito el reclutamiento"
+
+#: hr/models.py:163
+msgid "Associated job description"
+msgstr "Descripción de trabajo asociado"
+
+#: hr/models.py:166
+msgid "Start date of the job"
+msgstr "Fecha de inicio del trabajo"
+
+#: hr/models.py:169
+msgid "Number of vacancies available"
+msgstr "Número de vacantes disponibles"
+
+#: hr/models.py:173
+msgid "Name of vacancy"
+msgstr "Nombre de la vacante"
+
+#: hr/models.py:181
+msgid "Work location"
+msgstr "Ubicaciún de trabajo"
+
+#: hr/models.py:186 hr/models.py:195
+msgid "A maximum of 500 characters is allowed"
+msgstr "Maximo 500 caracteres permitidos"
+
+#: hr/models.py:190
+msgid "Requisition Approved?"
+msgstr "¿Solicitud aprovada?"
+
+#: hr/models.py:202
+msgid "Recruitment"
+msgstr "Reclutamiento"
+
+#: hr/models.py:203
+msgid "recruitments"
+msgstr "Reclutamientos"
+
+#: hr/models.py:215
+msgid "Closing date for advertisement"
+msgstr "Fecha de cierre para el anuncio"
+
+#: hr/models.py:219
+msgid "Short description of the company"
+msgstr "Descripción corta de la empresa"
+
+#: hr/models.py:223
+msgid "The necessary information to contact the candidate"
+msgstr "Información necesaria para contactar el candidato"
+
+#: hr/models.py:227
+msgid "The characteristics of the ideal candidate"
+msgstr "Características del candidato ideal"
+
+#: hr/models.py:231
+msgid "Characteristics that describe the vacancy "
+msgstr "Características que describen la vacante"
+
+#: hr/models.py:235
+msgid "Name of the vacancy"
+msgstr "Nombre de la vacante"
+
+#: hr/models.py:239
+msgid "Location of the vacancy"
+msgstr "Ubicacion de la vacante"
+
+#: hr/models.py:243
+msgid "Characteristics such as experience that help establish the salary"
+msgstr "Características como la experiencia que ayudan a establecer el salario"
+
+#: hr/models.py:247
+msgid "Comment here some additional features to consider"
+msgstr "Comenta aquí algunas características adicionales a tener en cuenta"
+
+#: hr/models.py:249
+msgid "Advertisement type"
+msgstr "Tipo de anunncio"
+
+#: hr/models.py:251
+msgid "Internal(True) or External(False)?"
+msgstr "¿Interno(True) o Externo(False)?"
+
+#: hr/models.py:253
+msgid "Advertisement"
+msgstr "Anuncio"
+
+#: hr/models.py:254
+msgid "Advertisements"
+msgstr "Anuncios"
+
+#: hr/templates/approveRequest.html:6 hr/templates/approveRequest.html:83
+msgid "Approve request"
+msgstr "Aprobar solicitud"
+
+#: hr/templates/approveRequest.html:14 hr/templates/jobDescription.html:14
+#: hr/templates/jobVacancyAdvertisement.html:14
+#: hr/templates/recruitmentRequest.html:6
+#: hr/templates/recruitmentRequest.html:14
+msgid "Recruitment request"
+msgstr "Solicitud de reclutamiento"
+
+#: hr/templates/approveRequest.html:93 hr/templates/jobDescription.html:93
+#: hr/templates/jobVacancyAdvertisement.html:191
+#: hr/templates/receiveCVs.html:75 hr/templates/recruitmentRequest.html:24
+#: hr/templates/selectInitialCandidate.html:261
+msgid "Save"
+msgstr "Guardar"
+
+#: hr/templates/jobDescription.html:6 hr/templates/jobDescription.html:83
+#: hr/templates/jobVacancyAdvertisement.html:159
+#: hr/templates/requestList.html:17
+#: hr/templates/selectInitialCandidate.html:186
+msgid "Job Description"
+msgstr "Descripción de trabajo"
+
+#: hr/templates/jobVacancyAdvertisement.html:6
+msgid "Job Vacancy"
+msgstr "Vacante de trabajo"
+
+#: hr/templates/jobVacancyAdvertisement.html:83
+#: hr/templates/selectInitialCandidate.html:113
+msgid "Approval Information"
+msgstr "Información de aprobación"
+
+#: hr/templates/jobVacancyAdvertisement.html:91
+#: hr/templates/selectInitialCandidate.html:121
+msgid "Requisition Approval"
+msgstr "Solicitud aprobada"
+
+#: hr/templates/jobVacancyAdvertisement.html:101
+#: hr/templates/selectInitialCandidate.html:131
+msgid "Approvals Comments"
+msgstr "Comentario de aprovación"
+
+#: hr/templates/jobVacancyAdvertisement.html:115
+#: hr/templates/selectInitialCandidate.html:142
+msgid "Recruitment Information"
+msgstr "Información de reclutamiento"
+
+#: hr/templates/jobVacancyAdvertisement.html:146
+#: hr/templates/selectInitialCandidate.html:173
+msgid "Ad information"
+msgstr "Información del anuncio"
+
+#: hr/templates/jobVacancyAdvertisement.html:153
+#: hr/templates/selectInitialCandidate.html:180
+msgid "Job Title"
+msgstr "Título de trabajo"
+
+#: hr/templates/jobVacancyAdvertisement.html:183
+#: hr/templates/selectInitialCandidate.html:210
+msgid "Contact Details"
+msgstr "Detalles de contacto"
+
+#: hr/templates/receiveCVs.html:5
+msgid "Receive CVs"
+msgstr "Recivir HV"
+
+#: hr/templates/receiveCVs.html:24 shop/forms.py:14 user/models.py:26
+msgid "Last name"
+msgstr "Apellido"
+
+#: hr/templates/receiveCVs.html:60
+msgid "Home Address"
+msgstr "Dirección de la casa"
+
+#: hr/templates/receiveCVs.html:68
+msgid "Attach CV"
+msgstr "Adjuntar HV"
+
+#: hr/templates/requestList.html:4
+msgid "Request List"
+msgstr "Lista de solicitud"
+
+#: hr/templates/requestList.html:19
+msgid "Requisition Approved"
+msgstr "Solicitud aprovada"
+
+#: hr/templates/selectInitialCandidate.html:6
+msgid "Select Initial Candidate"
+msgstr "Seleccionar candidato inicial"
+
+#: hr/templates/selectInitialCandidate.html:14
+msgid "Personel Requisition Form"
+msgstr "Formulario solicitud de personal"
+
+#: hr/templates/selectInitialCandidate.html:100
+msgid "Education Requirements"
+msgstr "Requerimientos de educación"
+
+#: hr/templates/selectInitialCandidate.html:222
+msgid "Candidates"
+msgstr "Candidatos"
+
+#: hr/templates/selectInitialCandidate.html:234 shop/forms.py:18
+#: user/forms.py:26
+msgid "Email"
+msgstr "Correo"
+
+#: hr/templates/selectInitialCandidate.html:236
+msgid "CV"
+msgstr "HV"
+
+#: hr/templates/selectInitialCandidate.html:254
+msgid ""
+"If the process requires more candidates or a change in their advertisement "
+"select yes."
+msgstr ""
+"Si el proceso requiere más candidatos o un cambio en el anuncio seleccione "
+"sí."
+
+#: pages/admin.py:55
+msgid "Link"
+msgstr "Enlace"
+
+#: pages/admin.py:72
+msgid "Published state of selected items were toggled."
+msgstr ""
+"Se ha cambiado el estado de publicación de los elementos seleccionados."
+
+#: pages/models.py:64
+msgid "URL"
+msgstr "URL"
+
+#: pages/models.py:68
+msgid ""
+"Example: '/about/contact/'. Make sure to have leading and trailing slashes. "
+"Good and descriptive URLs are important for good user experience and search "
+"engine ranking."
+msgstr ""
+"Ejemplo: '/about/contact/'. Asegúrese de tener barras iniciales y finales. "
+"Unas URL buenas y descriptivas son importantes para una buena experiencia de "
+"usuario y para el posicionamiento en los motores de búsqueda."
+
+#: pages/models.py:70
+msgid "Page"
+msgstr "Página"
+
+#: pages/models.py:80
+msgid "Name of the group"
+msgstr "Nombre del grupo"
+
+#: pages/models.py:81 pages/models.py:128 shop/models.py:108
+#: shop/templates/product_detail.html:35
+msgid "Description"
+msgstr "Descripción"
+
+#: pages/models.py:81
+msgid "Description of group"
+msgstr "Descripción del grupo"
+
+#: pages/models.py:82
+msgid "Group"
+msgstr "Grupo"
+
+#: pages/models.py:82
+msgid "Groups which have to access to this page group"
+msgstr "Grupos que tienen que acceder a este grupo de páginas"
+
+#: pages/models.py:83
+msgid "If checked members of this group have access to all pages"
+msgstr ""
+"Si se marca, los miembros de este grupo tienen acceso a todas las páginas"
+
+#: pages/models.py:96
+msgid "ID of page"
+msgstr "Fecha de la página"
+
+#: pages/models.py:100
+msgid ""
+"If checked, the page cannot be viewed through the URL. Used for pages that "
+"are embedded into complex pages like the frontpage."
+msgstr ""
+"Si está marcada, la página no se puede ver a través de la URL. Se utiliza "
+"para las páginas que están incrustadas en páginas complejas como la portada"
+
+#: pages/models.py:109
+msgid ""
+"Title is shown in browser window. Use a good informative title, since search "
+"engines normally display the title on their result pages."
+msgstr ""
+"El título se muestra en la ventana del navegador. Utilice un buen título "
+"informativo, ya que los motores de  búsqueda normalmente muestran el título "
+"en sus páginas de resultados."
+
+#: pages/models.py:122
+msgid "script"
+msgstr "script"
+
+#: pages/models.py:130
+msgid ""
+"The metadata description is normally shown in search engine results, making "
+"the description an effective way of capturing users attention. Description "
+"should be a clear description of the content and less the 200 characters "
+"long. Also used when sharing page on social media"
+msgstr ""
+"La descripción de los metadatos se muestra normalmente en los resultados de "
+"los motores de búsqueda, por lo que la descripción es una forma eficaz de "
+"captar  la atención de los usuarios. La descripción debe ser una descripción "
+"clara del contenido  y tener menos de 200 caracteres. También se utiliza al "
+"compartir la página en las redes sociales"
+
+#: pages/models.py:137
+msgid "Keywords"
+msgstr "Palabras claves"
+
+#: pages/models.py:139
+msgid ""
+"Comma-separated list of keywords for this page. Mainly used internally as "
+"search engines rarely use keywords to rank pages."
+msgstr ""
+"Lista separada por comas de palabras clave para esta página. Se utiliza "
+"principalmente a nivel interno, ya que los motores de búsqueda  rara vez "
+"utilizan las palabras clave para clasificar las páginas"
+
+#: pages/models.py:146
+msgid "OpenGraph Image"
+msgstr "Imagen OpenGraph"
+
+#: pages/models.py:148
+msgid ""
+"Example: 'https://www.eso.org/public/archives/imagecomparisons/newsfeature/"
+"potw1413a.jpg'. If given: full path to an image that will be used when "
+"sharing the page on social media. Must be larger than 200x200px and smaller "
+"than 5MB."
+msgstr ""
+"Ejemplo: 'https://www.eso.org/public/archives/imagecomparisons/newsfeature/"
+"potw1413a.jpg'. If given: full path to an image that will be used when "
+"sharing the page on social media.  Must be larger than 200x200px and smaller "
+"than 5MB."
+
+#: pages/models.py:166
+msgid "Published"
+msgstr "Publicado"
+
+#: pages/models.py:168
+msgid ""
+"If this is unchecked, the page will not be viewable online. Timed publishing "
+"of published pages, can be controlled by the start/end publishing fields."
+msgstr ""
+"Si esta opción no está marcada, la página no se podrá ver en línea. El "
+"tiempo de publicación de las páginas publicadas, puede ser controlado por "
+"los campos de inicio/fin de publicación."
+
+#: pages/models.py:177
+msgid ""
+"Leave blank to publish immediately. The field only has effect for published "
+"pages (see above)."
+msgstr ""
+"Déjelo en blanco para publicarlo inmediatamente. El campo sólo tiene efecto "
+"para las páginas publicadas (ver arriba)."
+
+#: pages/models.py:184
+msgid ""
+"Leave blank for open-ended publishing. The field only has effect for "
+"published pages (see above)."
+msgstr ""
+"Dejar en blanco para la publicación abierta. El campo sólo tiene efecto para "
+"las páginas publicadas (véase más arriba)."
+
+#: pages/models.py:191
+msgid "Determines e.g. which templates to use for rendering the template."
+msgstr ""
+"Determina, por ejemplo, qué plantillas deben utilizarse para la "
+"representación de la plantilla."
+
+#: pages/models.py:194
+msgid "Override the template specified by the section."
+msgstr "Anula la plantilla especificada por la sección."
+
+#: pages/models.py:208
+msgid "If checked, only logged-in users will be able to view the page."
+msgstr "Si se marca, sólo los usuarios registrados podrán ver la página."
+
+#: pages/models.py:217
+msgid "If checked, page will not be cached. Use with care!"
+msgstr ""
+"Si está marcada, la página no se almacenará en la caché. Utilícela con "
+"cuidado."
+
+#: pages/models.py:223
+msgid ""
+"If checked the WYSIWYG editor will be disabled, useful for editing pages "
+"with javascript."
+msgstr ""
+"Si está marcada, el editor WYSIWYG estará desactivado, lo que resulta útil "
+"para editar páginas con javascript."
+
+#: pages/models.py:224
+msgid "Allow Live edit (only if the page doesn't use javascript, embed, etc.)"
+msgstr ""
+"Permitir la edición en vivo (sólo si la página no utiliza javascript, "
+"incrustaciones, etc.)"
+
+#: pages/models.py:226
+msgid "Redirect URL"
+msgstr "Redirigir la URL"
+
+#: pages/models.py:227
+msgid ""
+"Example: 'https://www.eso.org/public/'. Used if the page has been "
+"permanently moved. If given, access to the page will trigger a HTTP 301 "
+"redirection to the given URL."
+msgstr ""
+"Ejemplo: 'https://www.eso.org/public/'. Se utiliza si la página ha sido "
+"trasladada permanentemente. Si se indica, el acceso a la página provocará "
+"una redirección HTTP 301 a la URL indicada."
+
+#: pages/models.py:230
+msgid "PageGroup the Page belongs to, used for access restriction."
+msgstr ""
+"Grupo de páginas al que pertenece la página, utilizado para restringir el "
+"acceso."
+
+#: pages/models.py:250
+msgid "Is Online"
+msgstr "Está en línea"
+
+#: pages/models.py:328
+msgid "Meaningful title for embedded "
+msgstr "Título significativo para los incrustados"
+
+#: pages/models.py:333
+msgid ""
+"Description of where the page is being embedded and if there is any special "
+"considerations to take - e.g. page length etc."
+msgstr ""
+"Descripción del lugar en el que se está incrustando la página y si hay que "
+"tener alguna consideración especial, por ejemplo, la longitud de la página, "
+"etc."
+
+#: pages/models.py:346
+msgid ""
+"Select page that you want to use for the specific key. Note, only pages "
+"marked as embedded pages can be selected."
+msgstr ""
+"Seleccione la página que desea utilizar para la clave específica. Tenga en "
+"cuenta que sólo se pueden seleccionar las páginas marcadas como páginas "
+"incrustadas."
+
+#: pages/models.py:358
+msgid "Page Embedding"
+msgstr "Incorporación de páginas"
+
+#: pages/models.py:384
+msgid "Page translation"
+msgstr "Traducción de páginas"
+
+#: pages/models.py:401
+#, python-format
+msgid ""
+"Application %(app)s failed to register page key \"%(key)s\". The key has "
+"already been registered by the application %(otherapp)s."
+msgstr ""
+"La aplicación %(app)s no ha podido registrar la clave de página '%(key)s'. "
+"La clave ya ha sido registrada por la aplicación %(otherapp)s."
+
+#: pages/templatetags/pages.py:38
+msgid "Context must be of type RequestContext."
+msgstr "El contexto debe ser del tipo RequestContext."
+
+#: pages/templatetags/pages.py:45
+msgid "The embedded page could not be found."
+msgstr "No se ha podido encontrar la página incrustada."
+
+#: pages/templatetags/pages.py:47
+msgid "User not authorized to view page."
+msgstr "Usuario no autorizado a ver la página"
+
+#: pages/templatetags/pages.py:49
+#, python-format
+msgid "Couldn't resolve request variable: %s"
+msgstr "No se ha podido resolver la variable de solicitud: %s"
+
+#: pages/templatetags/pages.py:77
+msgid "embed_page tag requires one argument"
+msgstr "La etiqueta embed_page requiere un argumento"
+
+#: project_name/urls.py:33
+msgid "admin/doc/"
+msgstr "admin/doc/"
+
+#: project_name/urls.py:34
+msgid "admin/"
+msgstr "admin/"
+
+#: shop/forms.py:12
+msgid "Your Name"
+msgstr "Tu nombre"
+
+#: shop/forms.py:16
+msgid "Your Last Name"
+msgstr "Tu apellido"
+
+#: shop/forms.py:19
+msgid "Your e-mail"
+msgstr "Tu correo"
+
+#: shop/forms.py:21
+msgid "Message"
+msgstr "Mensaje"
+
+#: shop/forms.py:22
+msgid "Your Message"
+msgstr "Tu mensaje"
+
+#: shop/forms.py:31
+msgid "quantity"
+msgstr "Cantidad"
+
+#: shop/models.py:20
+msgid "Billing"
+msgstr ""
+
+#: shop/models.py:21
+msgid "Shipping"
+msgstr ""
+
+#: shop/models.py:24 shop/models.py:202 user/models.py:10
+msgid "User"
+msgstr "Usuario"
+
+#: shop/models.py:26
+msgid "Address line 1"
+msgstr "Dirección 1"
+
+#: shop/models.py:28
+msgid "Register an address "
+msgstr "Registra una dirección"
+
+#: shop/models.py:30
+msgid "Address line 2"
+msgstr "Dirección 2"
+
+#: shop/models.py:32
+msgid "Register a second address"
+msgstr "Registra una segunda dirección"
+
+#: shop/models.py:34
+msgid "City"
+msgstr "Ciudad"
+
+#: shop/models.py:36
+msgid "City where the purchase is made"
+msgstr "Ciudad donde realizo la compra"
+
+#: shop/models.py:38
+msgid "Zip code"
+msgstr "Código postal"
+
+#: shop/models.py:40
+msgid "City zip code"
+msgstr "Código postal de la ciudad"
+
+#: shop/models.py:42
+msgid "Address type"
+msgstr "Tipo de dirección"
+
+#: shop/models.py:45
+msgid "Allows you to choose between different types of addresses"
+msgstr "Te permite elegir entre diferentes tipos de direcciones"
+
+#: shop/models.py:47
+msgid "Default"
+msgstr "Por defecto"
+
+#: shop/models.py:49
+msgid "Allows to set default address"
+msgstr "Te permite establecer una dirección predeterminada"
+
+#: shop/models.py:55 user/templates/detail.html:127
+#: user/templates/update_profile.html:105
+msgid "Address"
+msgstr "Dirección"
+
+#: shop/models.py:56
+msgid "Addresses"
+msgstr "Direcciones"
+
+#: shop/models.py:78
+msgid "Node"
+msgstr "Node"
+
+#: shop/models.py:79
+msgid "Nodes"
+msgstr "Nodes"
+
+#: shop/models.py:93
+msgid "Sub Category"
+msgstr "Sub Categoría"
+
+#: shop/models.py:94
+msgid "Sub Categories"
+msgstr "Sub Categorías"
+
+#: shop/models.py:105
+msgid "Name of product, example product 1"
+msgstr "Nombe del producto, ejemplo producto 1"
+
+#: shop/models.py:109
+msgid "Here you must write the product description"
+msgstr "Aquí debes escribir la descripción del producto"
+
+#: shop/models.py:113
+msgid "Sub category"
+msgstr "Sub Categoría"
+
+#: shop/models.py:117
+msgid "Slug"
+msgstr "Slug"
+
+#: shop/models.py:119
+msgid "A short name, generally used in URLs."
+msgstr "Un nombre corto, se usa generalmente en las URLs."
+
+#: shop/models.py:124 shop/templates/cart.html:20
+#: shop/templates/product_list.html:28
+msgid "Price"
+msgstr "Precio"
+
+#: shop/models.py:129
+msgid "Price of product"
+msgstr "Precio del producto"
+
+#: shop/models.py:131
+msgid "Stock"
+msgstr "Unidades"
+
+#: shop/models.py:133
+msgid "Stock of product"
+msgstr "Unidades del producto"
+
+#: shop/models.py:135
+msgid "Created"
+msgstr "Creado"
+
+#: shop/models.py:138
+msgid "Updated"
+msgstr "Actualizado"
+
+#: shop/models.py:143
+msgid "Field to know if the product is active or not active"
+msgstr "Campo para saber si el producto esta activo o no"
+
+#: shop/models.py:146 shop/models.py:180 shop/templates/cart.html:19
+msgid "Product"
+msgstr "Producto"
+
+#: shop/models.py:147
+msgid "Products"
+msgstr "Productos"
+
+#: shop/models.py:174
+msgid "OrderItem"
+msgstr "OrdenArticulo"
+
+#: shop/models.py:175
+msgid "OrderItems"
+msgstr "OrdenArticulos"
+
+#: shop/models.py:179 shop/models.py:197 shop/models.py:258
+msgid "Order"
+msgstr "Pedido"
+
+#: shop/models.py:181 shop/templates/cart.html:21
+msgid "Quantity"
+msgstr "Cantidad"
+
+#: shop/models.py:181
+msgid "Quantity you want to buy"
+msgstr "Cantidad que quieres comprar"
+
+#: shop/models.py:198
+msgid "Orders"
+msgstr "Pedidos"
+
+#: shop/models.py:202
+msgid "Name of the user making the purchase "
+msgstr "Nombre del usuario que realizo la compra"
+
+#: shop/models.py:203
+msgid "Start date"
+msgstr "Fecha de inicio"
+
+#: shop/models.py:204
+msgid "Ordered date"
+msgstr "Fecha de compra"
+
+#: shop/models.py:204
+msgid "Date of purchase"
+msgstr "Fecha de compra"
+
+#: shop/models.py:205
+msgid "Ordered"
+msgstr "Pedido"
+
+#: shop/models.py:209
+msgid "Billing address"
+msgstr "Dirección de facturación"
+
+#: shop/models.py:216
+msgid "Shipping address"
+msgstr "Dirección de envío"
+
+#: shop/models.py:253
+msgid "Payment"
+msgstr "Pago"
+
+#: shop/models.py:254
+msgid "Payments"
+msgstr "Pagos"
+
+#: shop/models.py:260
+msgid "Payment method"
+msgstr "Metodo de pago"
+
+#: shop/models.py:263
+msgid "Select payment method"
+msgstr "Selecciona el metodo de pago"
+
+#: shop/models.py:265
+msgid "Timestamp"
+msgstr "Fecha de pago"
+
+#: shop/models.py:267
+msgid "Date of payment"
+msgstr "Fecha de pago"
+
+#: shop/models.py:269
+msgid "Succesful"
+msgstr "Exitoso"
+
+#: shop/models.py:271
+msgid "Successful payment?"
+msgstr "¿Pago exitoso?"
+
+#: shop/models.py:273 user/templates/detail.html:158
+msgid "Amount"
+msgstr "Monto (Cantidad)"
+
+#: shop/models.py:274
+msgid "Amount paid"
+msgstr "Monto pagado"
+
+#: shop/models.py:276
+msgid "Raw response"
+msgstr "Confirmación de pago"
+
+#: shop/models.py:277
+msgid "Payment gateway response"
+msgstr "Respuesta pasarela de pago"
+
+#: shop/templates/cart.html:4
+msgid "Cart"
+msgstr "Carrito"
+
+#: shop/templates/cart.html:22
+msgid "Total"
+msgstr "Total"
+
+#: shop/templates/cart.html:23
+msgid "Actions"
+msgstr "Acciones"
+
+#: shop/templates/cart.html:67
+msgid "There are no items in your cart."
+msgstr "No hay articulos en su carrito"
+
+#: shop/templates/cart.html:69 shop/templates/cart.html:90
+msgid "Continue Shopping"
+msgstr "Continuar comprando"
+
+#: shop/templates/cart.html:105
+msgid "Order summary"
+msgstr "Resumen de compra"
+
+#: shop/templates/cart.html:116
+#, fuzzy
+#| msgid "Shipping"
+msgid "Shipping Cost"
+msgstr "Costo de envio"
+
+#: shop/templates/cart.html:128
+msgid "Proceed to Checkout"
+msgstr "Proceder a pagar"
+
+#: shop/templates/contact.html:5 shop/templates/contact.html:16
+msgid "Contact"
+msgstr "Contacto"
+
+#: shop/templates/contact.html:14
+msgid "Home"
+msgstr "Inicio"
+
+#: shop/templates/contact.html:26
+msgid "Get in touch"
+msgstr "Ponte en contacto"
+
+#: shop/templates/contact.html:33
+msgid "Submit message"
+msgstr "Enviar mensaje"
+
+#: shop/templates/product_detail.html:5
+#, fuzzy
+#| msgid "Product"
+msgid "Product detail"
+msgstr "Detalle de producto"
+
+#: shop/templates/product_detail.html:53
+msgid "Payment Method"
+msgstr "Metodo de pago"
+
+#: shop/templates/product_detail.html:62
+msgid "units avalaible"
+msgstr "Unidades disponibles"
+
+#: shop/templates/product_detail.html:68
+msgid "Add to cart"
+msgstr "Agregar al carrito"
+
+#: shop/templates/product_detail.html:73
+msgid "Buy now"
+msgstr "Comprar ahora"
+
+#: shop/templates/product_detail.html:88
+msgid "Your product has been successfully added to your cart."
+msgstr "Tu producto ha sido agregado al carrito exitosamente"
+
+#: shop/templates/product_detail.html:105
+msgid "Continue shopping."
+msgstr "Continuar comprando"
+
+#: shop/templates/product_detail.html:107
+msgid "Go to cart"
+msgstr "Ir al carrito"
+
+#: shop/templates/product_list.html:4
+msgid "Shop"
+msgstr "Tienda"
+
+#: user/forms.py:9 user/templates/login.html:30 user/templates/signup.html:40
+msgid "Username"
+msgstr "Usuario"
+
+#: user/forms.py:12 user/templates/login.html:34 user/templates/signup.html:44
+msgid "Password"
+msgstr "Contraseña"
+
+#: user/forms.py:17
+msgid "Password confirmation"
+msgstr "Confirmación de contraseña"
+
+#: user/forms.py:37
+msgid "Username is already in use."
+msgstr "El nombre de usuario ya esta en uso."
+
+#: user/forms.py:48
+msgid "Passwords do not match."
+msgstr "La contraseña no coincide"
+
+#: user/models.py:14
+msgid "Enter a user name"
+msgstr "Ingresa tu nombre de usuario"
+
+#: user/models.py:19 user/templates/detail.html:98
+#: user/templates/update_profile.html:61
+msgid "Enter your ID number"
+msgstr "Ingresa tu número de ID"
+
+#: user/models.py:34 user/templates/update_profile.html:77
+msgid "Enter your e-mail"
+msgstr "Ingresa tu correo"
+
+#: user/models.py:36
+msgid "CVs"
+msgstr "HV"
+
+#: user/models.py:44 user/templates/detail.html:115
+#: user/templates/update_profile.html:93
+msgid "Enter your cell phone number"
+msgstr "Ingresa tu número de celular"
+
+#: user/models.py:53 user/templates/update_profile.html:127
+msgid "Enter your Age"
+msgstr "Ingresa tu edad"
+
+#: user/models.py:59
+msgid "Person"
+msgstr "Persona"
+
+#: user/models.py:60
+msgid "Persons"
+msgstr "Personas"
+
+#: user/templates/detail.html:5 user/templates/detail.html:197
+msgid "My account"
+msgstr "Mi cuenta"
+
+#: user/templates/detail.html:18
+msgid "Personal details"
+msgstr "Datos personales"
+
+#: user/templates/detail.html:93 user/templates/update_profile.html:56
+msgid "Identification Card"
+msgstr "Tarjeta de identificación"
+
+#: user/templates/detail.html:110 user/templates/update_profile.html:88
+msgid "Phone number"
+msgstr "Número de telefono"
+
+#: user/templates/detail.html:144
+msgid "Save changes"
+msgstr "Guardar cambios"
+
+#: user/templates/detail.html:150
+msgid "Your Orders"
+msgstr "Tus compras"
+
+#: user/templates/detail.html:156
+msgid "Reference No."
+msgstr "No de referencia"
+
+#: user/templates/detail.html:157
+msgid "Date"
+msgstr "Fecha"
+
+#: user/templates/detail.html:159
+msgid "Payment Status"
+msgstr "Estado del pago"
+
+#: user/templates/detail.html:168
+msgid "Paid"
+msgstr "Pagado"
+
+#: user/templates/detail.html:168
+msgid "Not paid"
+msgstr "No pagado"
+
+#: user/templates/detail.html:172
+msgid "You haven't made any purchases"
+msgstr "No has hecho ninguna compra"
+
+#: user/templates/detail.html:184
+msgid "Customer section"
+msgstr "Sección de clientes"
+
+#: user/templates/detail.html:191
+msgid "Settings"
+msgstr "Ajustes"
+
+#: user/templates/detail.html:203
+msgid "Logout"
+msgstr "Cerrar sesión"
+
+#: user/templates/login.html:4 user/templates/login.html:15
+#: user/templates/signup.html:25
+msgid "Login"
+msgstr "Iniciar sesión"
+
+#: user/templates/login.html:26 user/templates/signup.html:36
+msgid "Warning"
+msgstr "Advertencia"
+
+#: user/templates/login.html:36 user/templates/signup.html:46
+msgid "Sign in"
+msgstr "Iniciar sesión"
+
+#: user/templates/login.html:38
+msgid "Not registered yet?"
+msgstr "¿Aun no te has registrado?"
+
+#: user/templates/login.html:40
+msgid "Register now"
+msgstr "Registrate ahora"
+
+#: user/templates/login.html:41
+msgid ""
+"It is easy and done in 1 minute and gives you access to special discounts "
+"and much more"
+msgstr ""
+"Es fácil y puedes hacerlo en un 1 minuto, además te da acceso a descuentos "
+"especiles y mucho más"
+
+#: user/templates/signup.html:5
+msgid "Sign Up"
+msgstr "Registrarse"
+
+#: user/templates/signup.html:14
+msgid "New account"
+msgstr "Nueva cuenta"
+
+#: user/templates/signup.html:19
+msgid "Register"
+msgstr "Registrate"
+
+#: user/templates/update_profile.html:5
+msgid "Personal data"
+msgstr "Datos personales"
+
+#: user/templates/update_profile.html:136
+msgid "Update info"
+msgstr "Actualizar información"
+
+#~ msgid "requester"
+#~ msgstr "solicitante"
+
+#, fuzzy
+#~| msgid "Start date"
+#~ msgid "startingDate"
+#~ msgstr "Fecha de inicio"
+
+#~ msgid "location"
+#~ msgstr "ubicacion"
+
+#~ msgid "comments"
+#~ msgstr "comentarios"
+
+#~ msgid "content"
+#~ msgstr "Contenido"
+
+#, fuzzy
+#~| msgid "Enter a user name "
+#~ msgid "Enter the area name"
+#~ msgstr "Ingresa tu nombre de usuario"
+
+#, fuzzy
+#~| msgid "Enter your Age"
+#~ msgid "Enter report to"
+#~ msgstr "Ingresa tu edad"
+
+#, fuzzy
+#~| msgid "Description"
+#~ msgid "Select job description"
+#~ msgstr "Descripción"
+
+#~ msgid "First name"
+#~ msgstr "Primer nombre"
+
+#~ msgid "Enter your ID number "
+#~ msgstr "Ingresa tu número de ID"
+
+#~ msgid "Enter your cell phone number "
+#~ msgstr "Ingresa tu número de celular"

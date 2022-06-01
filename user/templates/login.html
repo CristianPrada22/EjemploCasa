@@ -1,0 +1,48 @@
+{% extends "indexx.html" %}
+{% load i18n%}
+{% block title %}
+    {% trans "Login" %}
+{%endblock%}
+
+
+{% block content %}
+  
+    <div class="site-section m-3 p-3" id="content">
+        <div class="container bg-white">
+            <div class="row justify-content-center align-items-center minh-100">               
+                <div class="col-lg-6">
+                    <div class="box">
+                        <h2 class="text-uppercase">{% trans "Login" %}</h2>                        
+                        <hr>
+                        <form method="POST" action= "{% url 'user:login' %}" >
+                            {% csrf_token %}
+    
+                            <div class="form-group " >
+                                {% if form.error_messages %}
+                                    <div class="alert alert-danger alert-dismissible" role="alert">
+                                        <button type="button" class="close" data-dismiss = "alert" aria-label = "Close">
+                                        <span aria-hidden = "true">&times;</span>
+                                        </button>
+                                        <strong>{% trans "Warning" %}: </strong> {{ form.get_invalid_login_error }}
+                                    </div>
+                                {% endif %}
+
+                                <input class="form-control" type="text" placeholder="{% trans 'Username' %}" name="username" style="max-width: 500px;"/>
+                            </div>
+    
+                            <div class="form-group">
+                                <input class="form-control" type="password" placeholder="{% trans 'Password' %}" name="password" style="max-width: 500px;" />
+                            </div>    
+                            <button class="btn btn-template-outlined btn-block mt-5" type="submit" style="max-width: 500px;"><i class="fa fa-sign-in"></i>{% trans "Sign in" %}!</button>                           
+                        </form> 
+                       <p class="text-center text-muted">{% trans "Not registered yet?" %}</p>
+                       <p class="mt-4">
+                          <a href="#"><strong>{% trans "Register now" %}</strong></a>
+                          ! {% trans "It is easy and done in 1 minute and gives you access to special discounts and much more" %}!                    
+                        </p>                      
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+{% endblock %}

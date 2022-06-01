@@ -1,0 +1,110 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% trans "Recruitment request" %}
+{% endblock title %}
+
+{% block content %}
+    <div class="container bg-white pt-2 pb-2 mt-3 mb-3">
+        <div class="card card-header p-0 mb-0 mt-2">
+            <h3>
+                <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#recruitmentRequest" aria-expanded="true" aria-controls="recruitmentRequest">
+                    <i class="fa fa-angle-down mr-1"></i>{% trans "Recruitment request" %}
+                </a>
+            </h3>
+        </div>
+        <div id="recruitmentRequest" class="collapse show">
+            <div class="card card-body">
+                <form id="jobD" method="post" action="">
+                    {% csrf_token %}
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="requester" class="col-sm-2 col-form-label">{% trans "Requester" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.requester}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="dateOfRequest" class="col-sm-2 col-form-label">{% trans "Date of request" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.dateOfRequest}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="departament" class="col-sm-2 col-form-label">{% trans "Departament" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.departament}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="jobDescription" class="col-sm-2 col-form-label">{% trans "Job description" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.jobDescription}}
+                                <small id="hint_id_jobDescription" class="form-text text-muted">Select "--------" in case you do not find the desired option.</small>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="startingDate" class="col-sm-2 col-form-label">{% trans "Starting date" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.startingDate}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="numberOfVacancies" class="col-sm-2 col-form-label">{% trans "Number of vacancies" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.numberOfVacancies}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="title" class="col-sm-2 col-form-label">{% trans "Title" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.title}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="responsabilities" class="col-sm-2 col-form-label">{% trans "Responsabilities" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.responsabilities}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="location" class="col-sm-2 col-form-label">{% trans "Location" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.location}}
+                            </div>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="form-group row col">
+                            <label for="comments" class="col-sm-2 col-form-label">{% trans "Comments" %}:</label>
+                            <div class="col-sm-10">
+                                {{ form.comments}}
+                            </div>
+                        </div>
+                    </div>
+                    <div id="btn_save" class="d-flex col-md-12 justify-content-center">
+                        <input type="submit" class="btn btn-md bg-gray w-25" value="{% trans 'Save' %}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
