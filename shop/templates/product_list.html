@@ -1,0 +1,77 @@
+{% extends "indexx.html" %}
+{% load i18n %}
+{% block title %}
+    {% trans "Shop" %}
+{% endblock title %}
+
+{% block content %}
+
+<div class="site-section m-5">
+    <div class="container-fluid ">
+        <div class="row">
+            <div class="col-md-9 bg-white p-3 ml-5">
+                <div class="row mb-5">            
+                    {% for product in products %}
+                    <div class="col-lg-4 col-md-6 col-ms-6 mb-2 mt-5" data-aos='fade-up'>
+        
+                        <div class="d-flex align-products-start justify-content-center" >
+                            <figure class="block-4-image ">
+                                <a href="{{ product.get_absolute_url }}">
+                                    <img class="img-fluid img-responsive" style="height: 250px;" src="{{ product.image.url }}" alt="{{ product.title }}"> 
+                                </a>
+                            </figure>
+                        </div>             
+                        <div class="d-block justify-content-start block-4-text p-2">
+                            <a href="{{ product.get_absolute_url }}">
+                                <h3>{% trans product.title %}</h3>
+                            </a>
+                            <p class="mb-0">{% trans "Price" %}: {{ product.price }}</p>
+                        </div>
+                    </div>
+                    {% endfor %}                    
+                </div> 
+                <div>
+                    {% include 'pagination.html'%}
+                    
+                </div> 
+    
+            </div>            
+                <!-- Category -->
+            <div class="col-md-2  ml-3 p-3 border bg-white">
+                <div class="panel panel-default sidebar-menu">
+                    <div class="panel-heading">
+                        <h3 class="h4 panel-title ">
+                            <a href="{% url 'shop:product' %}" style="color:black;">
+                                Categories 
+                            </a>
+                        </h3>
+                    </div>
+                    <div class="panel-body">
+                        <ul class="nav nav-pills flex-column text-sm category-menu">
+                            {% for category in categories %} 
+                            <li class="nav-product">
+                                <a href="{% url 'shop:product_cat' parent_or_child='parent' pk=category.id %}" 
+                                    class="nav-link d-flex align-products-center justify-content-between">
+                                    <span>{{ category }}</span>
+                                </a>                                
+                                {% for sub_cat in category.children.all %}
+                                    <ul class="nav nav-pills flex-column">                      
+                                        <li class="nav-product">
+                                            <a href="{% url 'shop:product_cat' parent_or_child='child' pk=sub_cat.id %}" 
+                                                class="nav-link">
+                                                <span>{{ sub_cat }}</span>
+                                            </a>
+                                        </li>                                             
+                                    </ul>
+                                {% endfor %}                                
+                            </li>
+                            {% endfor %}                         
+                        </ul>
+                    </div>
+                </div>
+            </div>
+             
+        </div>
+    </div>
+</div>
+{% endblock content %}
