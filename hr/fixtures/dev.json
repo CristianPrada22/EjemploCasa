@@ -1,0 +1,116 @@
+[
+    {
+      "model": "hr.Area",
+      "pk": 1,
+      "fields": {
+          "areaName": "Finance",
+          "areaDescription": "Cash flow management",
+          "areaCode": "Fin_01"
+      }
+    },
+    {
+      "model": "hr.Area",
+      "pk": 2,
+      "fields": {
+        "areaName": "HumanResource",
+        "areaDescription": "To obtain and retain a work force whose characteristics are in accordance with the company's objectives, through adequate recruitment, selection, training and development programs.",
+        "areaCode": "Hr_01"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 1,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Controller_01",
+        "title": "Controller Finance",
+        "departament": "1",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Control and supervision of the economic management of the company.",
+        "responsabilities": "Prepare and monitor the annual budget, coordinate audits and communicate the company's financial situation to senior management to facilitate financial decision making.",
+        "skills": "Administration and Finance",
+        "abilities": "Administration and Finance",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Administration and Finance",
+        "annualSalary": "500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 2,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Risk_Manage_01",
+        "title": "Risk management specialist",
+        "departament": "1",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Study, analysis and control of the risk of the company's shares.",
+        "responsabilities": "Diagnose business liquidity, indebtedness or problems that may arise from poor financial management.",
+        "skills": "Administration and Finance",
+        "abilities": "Administration and Finance",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Administration and Finance",
+        "annualSalary": "500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 3,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "HR_oficcer",
+        "title": "Human Resources officer",
+        "departament": "2",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Develop and implement policies related to the effectiveness of the organization's personnel.",
+        "responsabilities": "Promote company values such as equality and diversity, manage payroll, interpret employment laws, dealing with grievances and implementing disciplinary files.",
+        "skills": "Leadership",
+        "abilities": "Leadership",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Labor law, Personnel management.",
+        "annualSalary": "500"
+      }
+    },
+    {
+      "model": "hr.JobDescription",
+      "pk": 4,
+      "fields": {
+        "createdBy": "1",
+        "creationDate": "2022-02-09",
+        "code": "Recruitment_Researcher_01",
+        "title": "Recruitment Researcher",
+        "departament": "2",
+        "reportTo": "Olga Lucero Vega",
+        "jobDescription": "Search and recruit qualified personnel.",
+        "responsabilities": "Search and recruit qualified personnel.",
+        "skills": "Good command of social networks, good domain infojobs.",
+        "abilities": "It requires being up to date in terms of the use of the Internet and social networks in terms of Human Resources.",
+        "experience": "2 years",
+        "educationRequirements": "High School",
+        "knowledge": "Linkedin, etc.",
+        "annualSalary": "500"
+      }
+    },
+    {
+      "model": "hr.Recruitment",
+      "pk": 1,
+      "fields": {
+        "requester": "1",
+        "dateOfRequest": "2022-02-09",
+        "startingDate": "2022-02-09",
+        "title": "Recruitment Researcher",
+        "departament": "2",
+        "location": "Villavicencio",
+        "jobDescription": "4",
+        "responsabilities": "Search and recruit qualified personnel.",
+        "numberOfVacancies": "5",
+        "comments": "none"
+      }
+    }
+]

@@ -1,0 +1,273 @@
+{% load static %}
+{% load i18n %}
+
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <title>
+    {% block title %}
+
+    {% endblock title %}
+  </title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="robots" content="all,follow">
+  <!-- Bootstrap CSS-->
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}">
+  <!-- Font Awesome CSS-->
+  <link rel="stylesheet" href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}">
+  <!-- Google fonts - Roboto-->
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto:300,400,700">
+  <!-- Bootstrap Select-->
+  <link rel="stylesheet" href="{% static 'vendor/bootstrap-select/css/bootstrap-select.min.css' %}">
+  <!-- owl carousel-->
+  <link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.carousel.css' %}">
+  <link rel="stylesheet" href="{% static 'vendor/owl.carousel/assets/owl.theme.default.css' %}">
+  <!-- theme stylesheet-->
+  <link rel="stylesheet" href="{% static 'css/style.default.css' %}" id="theme-stylesheet">
+  <!-- Custom stylesheet - for your changes-->
+  <link rel="stylesheet" href="{% static 'css/custom.css' %}">
+  <!-- Favicon and apple touch icons-->
+  <link rel="shortcut icon" href="{% static 'img/logo-tab.png' %}" type="image/x-icon"><!-- Imagene tab-->
+
+  <!-- Tweaks for older IEs-->
+  <!--[if lt IE 9]><script src="https://oss.maxcdn.com/html5shiv/3.7.3/html5shiv.min.js"></script><script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script><![endif]-->
+</head>
+
+<body class="bg-body">
+  <div id="all">
+    <!-- Top bar-->
+    <div class="top-bar">
+      <div class="container">
+        <div class="row d-flex align-items-center" style="width: 1280px;">
+          <div class="col-md-4 d-md-block d-none">
+            <p> {% trans "Contact us on +57 (608) 678 2084 or info@encisosystems.com." %} </p>
+          </div>
+          
+          <div class="col-md-6">
+            <div class="d-flex justify-content-md-end justify-content-between" >             
+              {% if not request.user.is_authenticated %}
+                <div class="login">
+                  <a href="#" data-toggle="modal" data-target="#login-modal" class="login-btn">
+                    <i class="fa fa-sign-in"></i><span class="d-none d-md-inline-block">{% trans "Sign In" %}</span>
+                  </a>
+                  <a href="{% url 'user:signup' %}" class="signup-btn">
+                    <i class="fa fa-user"></i>
+                    <span class="d-none d-md-inline-block">{% trans "Sign Up" %}</span>
+                  </a>
+                </div>
+              {% else  %}
+                {% if request.user.is_superuser %}
+                  <a  href="#" > {{ user.username }}  &nbsp; </a>
+                  <div class="header-menu">
+                    <div class="user-area dropdown float">
+                      <a href="#" class="dropdown-toggle active " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user " aria-hidden="true"> </i>
+                      </a>
+                      <div class="user-menu dropdown-menu">
+                          <a class="nav-link" href="{% url 'admin:index' %}"><i class="fa fa -cog"></i>{% trans "Administrate" %} </a>
+                          <a class="nav-link" href="{% url 'user:logout' %}"><i class="fa fa-power -off"></i> {% trans "Logout" %}</a>
+                      </div>
+                    </div>
+                  </div>
+                {% else %}
+                  <a  href="#" > {{ user.username }}  &nbsp; </a>
+                  <div class="header-menu">
+                    <div class="user-area dropdown float">
+                      <a href="#" class="dropdown-toggle active " data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                        <i class="fa fa-user " aria-hidden="true"> </i>
+                      </a>
+                      <div class="user-menu dropdown-menu">
+                          <a class="nav-link" href="{% url 'user:detail' request.user.username %}"><i class="fa fa -cog"></i>{% trans "My account" %}</a>
+                          <a class="nav-link" href="{% url 'user:logout' %}"><i class="fa fa-power -off"></i>{% trans "Logout" %}</a>
+                      </div>
+                    </div>
+                  </div>  
+                {% endif %}                                
+              {% endif %}
+              <ul class="social-custom list-inline">
+                <li class="list-inline-item"><a href="https://www.facebook.com/encisosystems/"><i class="fa fa-facebook"></i></a>
+                </li>
+                <li class="list-inline-item"><a href="https://www.instagram.com/encisosystemsco/"><i class="fa fa-instagram"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.twitter.com/encisosystems/"><i class="fa fa-twitter"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.youtube.com/c/EncisoSystems"><i class="fa fa-youtube"></i></a></li>
+                <li class="list-inline-item"><a href="https://www.linkedin.com/company/encisosystems/"><i class="fa fa-linkedin"></i></a></li>
+              </ul>
+            </div>
+          </div>
+          <div class="col-md-2 justify-content-md-end" >
+            <form action="/i18n/setlang/" method="post" style="display: inline;">
+              {% csrf_token %}
+              <div style="display: inline;">
+                <select class="text-white" name="language" onchange="javascript:form.submit()" style="border: none; background: #555;">
+                  {% for lang in LANGUAGES %}
+                    <option value="{{ lang.0 }}"{% ifequal LANGUAGE_CODE lang.0 %} selected="selected"{% endifequal %}>{{ lang.1 }}</option>
+                  {% endfor %}
+                </select>
+              </div>
+            </form>
+          </div>          
+        </div>
+      </div>      
+    </div>
+    <!-- Top bar end-->
+    <!-- Login Modal-->
+    <div id="login-modal" tabindex="-1" role="dialog" aria-labelledby="login-modalLabel" aria-hidden="true"
+      class="modal fade">
+      <div role="document" class="modal-dialog">
+        <div class="modal-content">
+          <div class="modal-header">
+            <h4 id="login-modalLabel" class="modal-title">{% trans "Customer Login" %}</h4>
+            <button type="button" data-dismiss="modal" aria-label="Close" class="close"><span
+                aria-hidden="true">×</span></button>
+          </div>
+          <div class="modal-body">
+            <form method="POST" action= "{% url 'user:login' %}" >
+              {% csrf_token %}
+
+              <div class="form-group " >
+                {% if form.error_messages %}
+                  <div class="alert alert-danger alert-dismissible" role="alert">
+                    <button type="button" class="close" data-dismiss = "alert" aria-label = "Close">
+                    <span aria-hidden = "true">&times;</span>
+                    </button>
+                    <strong>{% trans "Warning" %}: </strong> {{ form.get_invalid_login_error }}
+                  </div>
+                {% endif %}
+                <input class="form-control" type="text" placeholder="{% trans 'Username' %}" name="username" />
+              </div>
+
+              <div class="form-group">
+                  <input id="password_modal" class="form-control" type="password" placeholder="{% trans 'Password' %}" name="password" />
+              </div>
+
+
+              <button class="btn btn-primary btn-block mt-5" type="submit" >{% trans "Sign in" %}!</button>
+            </form>
+            <p class="text-center text-muted">{% trans "Not registered yet?" %}</p>
+            <p class="text-center text-muted">
+              <a href="{% url 'user:signup' %}">
+                <strong>{% trans "Register now" %}!</strong>
+              </a> {% trans "It is easy and done in 1 minute and gives you access to special discounts and much more" %}!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Login modal end-->
+    {% block navbar %}
+   
+    {% endblock navbar %}
+
+    {% block content %}
+
+    {% endblock content %}
+    
+    <!-- FOOTER -->
+    <footer class="main-footer">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-4">
+            <h4 class="h4">{% trans "Contact" %}</h4>
+            <hr>
+            <ul id="contact" class="list-unstyled">
+              <li id="c-address">
+                <strong>{% trans "Address:" %}</strong><p class="m-0 d-inline"> Calle 35B # 19D - 40</p>
+                <p class="m-0">Villavicencio, Colombia</p>
+              </li>
+              <li id="c-phone">
+                <strong>{% trans "Phone:" %}</strong><p class="m-0 d-inline"> +57 (608) 678 2084</p>
+              </li>
+              <li id="c-cell">
+                <strong>{% trans "Cell:" %}</strong><p class="m-0 d-inline"> +57 320 880 8381</p>
+              </li>
+              <li id="c-email">
+                <strong>{% trans "Email:" %}</strong> <a href="mailto:info@encisosystems.com">info@encisosystems.com</a>
+              </li>
+            </ul>
+            <hr class="d-block d-lg-none">
+          </div>
+          <div class="col-lg-2">
+            <h4 class="h4">{% trans "Social Media" %}</h4>
+            <hr>
+            <ul class="list-unstyled" id="socialMedia">
+              <li id="sm-facebook">
+                <a href="https://www.facebook.com/encisosystems/"> Facebook </a>
+              </li>
+              <li id="sm-instagram">
+                <a href="https://www.instagram.com/encisosystemsco/"> Instagram </a>
+              </li>
+              <li id="sm-twitter">
+                <a href="https://www.twitter.com/encisosystems/"> Twitter </a>
+              </li>
+              <li id="sm-linkedin">
+                <a href="https://www.linkedin.com/company/encisosystems/"> LinkedIn </a>
+              </li>
+              <li id="sm-youtube">
+                <a href="https://www.youtube.com/c/EncisoSystems"> Youtube </a>
+              </li>
+            </ul>
+            <hr class="d-block d-lg-none">
+          </div>
+          <div class="col-lg-4">
+            <h4 class="h4">{% trans "Legal Notice" %}</h4>
+            <hr>
+            <p>
+              Enciso Systems SAS is a simplified stock company, NIT 901390798 - 9. Send your legal notifications to
+              <br><a href="mailto:legal@encisosystems.com"> legal@encisosystems.com </a>
+            </p>
+            <hr class="d-block d-lg-none">
+          </div>
+          <div class="col-lg-2">
+            <h4 class="h4">{% trans "Help" %}</h4>
+            <hr>
+            <ul id="help" class="list-unstyled">
+              <li id="h-contact">
+                <a href="#"> Contact </a>
+              </li>
+              <li id="h-people">
+                <a href="#"> People </a>
+              </li>
+              <li id="g-terms">
+                <a href="/terms-and-conditions/"> Terms and Conditions </a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+      <div class="copyrights p-2">
+        <div class="container">
+          <div class="row">
+            <div class="col-lg-12 col-md-12">
+              <h4 class="h4"> Memberships </h4>
+              <p class="float-right">
+                <a href="https://fedesoft.org/">
+                  <img alt="Fedesoft Logo" src="/static/img/logo-fedesoft-50.png" height="50px">
+                </a>
+                <br>&copy;{% now "Y" %}. Enciso Systems
+              </p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </footer>
+  </div>
+  <!-- Javascript files-->
+  <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+  <script src="{% static 'vendor/popper.js/umd/popper.min.js' %}"> </script>
+  <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.cookie/jquery.cookie.js' %}"> </script>
+  <script src="{% static 'vendor/waypoints/lib/jquery.waypoints.min.js' %}"> </script>
+  <script src="{% static 'vendor/jquery.counterup/jquery.counterup.min.' %}js"> </script>
+  <script src="{% static 'vendor/owl.carousel/owl.carousel.min.js' %}"></script>
+  <script src="{% static 'vendor/owl.carousel2.thumbs/owl.carousel2.thumbs.min.js' %}"></script>
+  <script src="{% static 'js/jquery.parallax-1.1.3.js' %}"></script>
+  <script src="{% static 'vendor/bootstrap-select/js/bootstrap-select.min.js' %}"></script>
+  <script src="{% static 'vendor/jquery.scrollto/jquery.scrollTo.min.js' %}"></script>
+  <script src="{% static 'js/front.js' %}"></script>
+  <script src="{% static 'js/product_detail.js' %}"></script>
+</body>
+
+</html>

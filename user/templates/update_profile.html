@@ -1,0 +1,143 @@
+{% extends "home.html" %}
+{% load i18n%}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% trans "Personal data" %}
+{% endblock %}
+
+{% block content %}
+
+<div class="site-section m-3 p-3">
+    <div class="container bg-white">
+        <div class="row justify-content-md-center">
+            <div class="col-6 p-4" id="profile-box">
+                <form action="{% url 'user:update' %}" method="POST" >
+                    {% csrf_token %}
+                    <div class="media">                   
+                        <div class="media-body">
+                            <h5 class="ml-4">@{{ user.username }} | {{person.name}} {{person.lastName}}</h5>                        
+                        </div>
+                    </div>                
+                    <hr><br>
+                    {# Name  field #}
+                    <div class="form-group">
+                        <label>{% trans "Name" %}</label>
+                        <input
+                            class="form-control {% if form.name.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="name"
+                            placeholder="{% trans 'Enter your name' %}"
+                            value="{% if form.errors %}{{ form.name.value }}{% else %}{{ person.name }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.name.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>
+                    {# Last Name  field #}
+                    <div class="form-group">
+                        <label>{% trans "Last Name" %}</label>
+                        <input
+                            class="form-control {% if form.lastName.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="lastName"
+                            placeholder="{% trans 'Enter your last name' %}"
+                            value="{% if form.errors %}{{ form.lastName.value }}{% else %}{{ person.lastName }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.lastName.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>  
+                    {# Identification Card  field #}
+                    <div class="form-group">
+                        <label>{% trans "Identification Card" %}</label>
+                        <input
+                            class="form-control {% if form.cc.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="cc"
+                            placeholder="{% trans 'Enter your ID number' %}"
+                            value="{% if form.errors %}{{ form.cc.value }}{% else %}{{ person.cc }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.cc.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>
+                    {# E-mail  field #}
+                    <div class="form-group">
+                        <label>{% trans "E-mail" %}</label>
+                        <input
+                            class="form-control {% if form.email.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="email"
+                            placeholder="{% trans 'Enter your e-mail' %}"
+                            value="{% if form.errors %}{{ form.email.value }}{% else %}{{ person.email }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.email.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>               
+                    {# Phone number field #}
+                    <div class="form-group">
+                        <label>{% trans "Phone number" %}</label>
+                        <input
+                            class="form-control {% if form.cellphone.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="cellphone"
+                            placeholder="{% trans 'Enter your cell phone number' %}"
+                            value="{% if form.errors %}{{ form.cellphone.value }}{% else %}{{ person.cellphone }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.cellphone.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>
+    
+                    {# Address field #}
+                    <div class="form-group">
+                        <label>{% trans "Address" %}</label>
+                        <input
+                            class="form-control {% if form.home_address.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="home_address"
+                            placeholder="{% trans 'Enter your home address' %}"
+                            value="{% if form.errors %}{{ form.home_address.value }}{% else %}{{ person.home_address }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.address.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>
+    
+                    {# Age field #}
+                    <div class="form-group">
+                        <label>{% trans "Age" %}</label>
+                        <input
+                            class="form-control {% if form.Age.errors %}is-invalid{% endif %}"
+                            type="text"
+                            name="Age"
+                            placeholder="{% trans 'Enter your Age' %}"
+                            value="{% if form.errors %}{{ form.Age.value }}{% else %}{{ person.Age }}{% endif %}"
+                        />
+                        <div class="invalid-feedback">
+                            {% for error in form.Age.errors %}
+                                {{ error }}
+                            {% endfor%}
+                        </div>
+                    </div>
+                    <button type="submit" class="btn btn-primary btn-block mt-5">{% trans "Update info" %}</button>
+                </form>
+            </div>
+        </div>
+    </div>
+</div>
+
+{% endblock %}
