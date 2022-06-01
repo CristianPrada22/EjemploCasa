@@ -1,0 +1,24 @@
+{% load menus %}
+{% load i18n %}
+
+<ul class="nav navbar-nav ml-auto">
+    {% for entry in submenu %}
+        <li class="nav-item {% if entry.leaf_selected is False %}dropdown {% endif %}">
+            <a href="{{ entry.link|default:'#'}}" 
+                {% if entry.children %}
+                data-toggle="dropdown" data-hover="dropdown"
+                data-delay="200" class="dropdown-toggle" {% endif %}>
+                {% trans entry.title|safe %}
+            </a>
+            {% if entry.children|length %}
+                <ul id="item-{{ entry.id }}" class="dropdown-menu">
+                    <li>
+                        <ul class="list-unstyled">
+                            {% render_submenu entry.children main_children %}
+                        </ul>
+                    </li>                    
+                </ul>               
+            {% endif %}
+        </li>
+    {% endfor %}
+</ul>

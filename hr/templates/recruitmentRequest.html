@@ -1,0 +1,30 @@
+{% extends "base.html" %}
+{% load i18n %}
+{% load crispy_forms_tags %}
+
+{% block title %}
+    {% trans "Recruitment request" %}
+{% endblock title %}
+
+{% block content %}
+    <div class="container bg-white pt-2 pb-2 mt-3 mb-3">
+        <div class="card card-header p-0 mb-0 mt-2">
+            <h3>
+                <a class="btn bg-gray btn-block text-left" data-toggle="collapse" data-target="#recruitmentRequest" aria-expanded="true" aria-controls="recruitmentRequest">
+                    <i class="fa fa-angle-down mr-1"></i>{% trans "Recruitment request" %}
+                </a>
+            </h3>
+        </div>
+        <div id="recruitmentRequest" class="collapse show">
+            <div class="card card-body">
+                <form id="jobD" method="post" action="">
+                    {% csrf_token %}
+                    {{ form|crispy}}
+                    <div id="btn_save" class="d-flex col-md-12 justify-content-center">
+                        <input type="submit" class="btn btn-md bg-gray w-25" value="{% trans 'Save' %}">
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+{% endblock content %}
