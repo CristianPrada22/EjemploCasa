@@ -1,0 +1,676 @@
+[
+    {
+        "model": "pages.Section",
+        "pk": "1",
+        "fields": {
+            "name": "Default",
+            "template": "Default one column layout", 
+            "append_title": "| Enciso's shop"            
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "1",
+        "fields": {
+            "id": "1",
+            "embedded": "False",
+            "title": "About Us",
+            "content": " <h1><span style=\"font-size:26px\">Sound principles deliver consistent results<\/span><\/h1><p style=\"text-align:center\"><img class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-team.jpg\"\\\/><\/p><p style=\"text-align:center\">Enciso Systems Team. From left to right (top): Samuel Medina, Diego Palacios, Alejandro Vivas, Javier Enciso, Javier Riveros, Jonathan Guzmán. From left to right (bottom): Ingry Romero, Alejandra Rojas, Paula Velásquez.<br\\\/>Credit: Enciso Systems/G. Hidalgo <\/p><p style=\"text-align:justify\">Enciso Systems is an information technology and communication service provider, oriented to serve the needs of the big science organizations. The activities that are part of our corporate purpose are carried out both in Colombia and abroad.<\/p><p style=\"text-align:justify\">Enciso Systems is a simplified stock company (Enciso Systems SAS), incorporated in the Villavicencio Chamber of Commerce, registry 371.148, national tax ID (NIT) 901.390.798 - 9, <a href=\"https://www.dnb.com/duns-number.html\">D-U-N-S<\/a> 686.846.880, member of the Colombian Federation of the Software Industry and Related Information Technologies     (<a href=\"https://fedesoft.org/\">Fedesoft<\/a>).<\/p><h2>Philosophy<\/h2><p style=\"text-align:justify\">Long-term business relations rely on trust. At Enciso Systems, we strive to build trust between parties by having clear and open conversations. We privilege knowledge transfer and empowerment rather than artificial dependencies.<\/p><h2>Mission<\/h2><p style=\"text-align:justify\">We provide high quality information technology and communications services to advance knowledge of the world.<\/p><h2>Vision<\/h2><p style=\"text-align:justify\">We will provide information technology and communications services in every major scientific breakthrough.<\/p><h2>Values<\/h2><ul><li><strong>Gratitude<\/strong>: for our customers and collaborators.<\/li><li><strong>Passion<\/strong>: we truly love what we do.<\/li><li><strong>Perseverance<\/strong>: our commitment is success.<\/li><\/ul><h2>History<\/h2><p>Our history spans for more than a decade and three continents.<\/p><ul><li>2005: Javier receives a bachelor degree from National University of Colombia<\/li><li>2006: Javier joins <a href=\"https://www.unillanos.edu.co/\">University of the Llanos<\/a> as lecturer in Decision Theory and UML courses<\/li><li>2006: Javier moves to Shanghai and joins <a href=\"https://en.wikipedia.org/wiki/HiSoft\">hiSoft Technology International Limited<\/a> as Software Test Engineer<\/li><li>2007: Javier declines an offer to join Google at Kirkland office<\/li><li>2007: Alejandra and Javier create IT consulting Arawak Technology Solutions<\/li><li>2007: Arawak Technology Solutions joins <a href=\"http://parquesoftmeta.com/\">Parquesoft Meta<\/a><\/li><li>2007: Arawak Technology Solutions updates Villavicencio Chamber of Commerce website<\/li><li>2008: Alejandra and Javier moves to Germany to pursue advanced degree studies<\/li><li>2009: Javier joins the education and Public Outreach Department at the European Southern Observatory<\/li><li>2014: Javier, Alejandra and Edwin incorporate <a href=\"http://altix.co/\">Altix<\/a> consulting company<\/li><li>2016: Javier and Alejandra leave Altix to move to Germany<\/li><li>2020: Alejandra and Javier create IT Enciso Systems to supply to services demands in Europe and USA<\/li><li>2020: Enciso Systems releases NOIRLab/IPAC/STScI/ESA/CfA FITS Liberator 4<\/li><li>2020: Enciso Systems releases NOIRLab public websit<\/li><\/ul><h2>Leadership<\/h2><h2>Co-founder and CEO<\/h2><div class=\"container\"><div class=\"align-items-start row\"><div class=\"col text-justify\" style=\"text-align:justify\"><a href=\"https://www.linkedin.com/in/encisoj/\">Javier<\/a>  is a Computer Scientist from the  <a href=\"https://unal.edu.co/\">National University of Colombia<\/a>  and holds a Master of Science from the  <a href=\"https://tum.de/\">Technical University Munich<\/a>. Over the years, he has worked at Big Tech companies and preeminent research organizations in Colombia, China, Germany and USA. Currently, he spends most of his time with his wife and two daughters, while leading the most <a href=\"https://www.encisosystems.com/people\">amazing team<\/a>.<\/div><div class=\"align-items-start col-4 d-flex justify-content-center\"><img alt=\"Javier Enciso\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/javier-enciso_2.jpg\"\\\/><\/div><\/div><\/div><p> <\/p><p> <\/p><h2>Organization Chart <\/h2><p style=\"text-align:center\"><img alt=\"Organization Chart\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-org-chart_0.png\"\\\/><\/p> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "2",
+        "fields": {
+            "id": "2",
+            "embedded": "False",
+            "title": "Corporate Identity",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Corporate Identity<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h3>Trademark<\/h3><p><strong>ENCISO SYSTEMS <span style=\"font-size:11pt\"><span style=\"font-family:Arial\"><span style=\"color:#000\">®<\/span><\/span><\/span><\/strong> is a trademark by <a href=\"https://www.encisosystems.com/sites/default/files/2021-06/marca-enciso-systems.pdf\">Enciso Systems SAS<\/a>.<\/p><h3>Logo<\/h3><p>The symbol combines the silhouette of Colombia’s territory and coding brackets.<\/p><h4>Full Color<\/h4><p>For light backgrounds.<\/p><p style=\"text-align:center\"><a href=\"https://www.encisosystems.com/sites/default/files/2021-07/enciso-systems-logo-r.png\"><img alt=\"Logo Enciso Systems\" class=\"align-center img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-logo-r-600.png\"\\/><\/a><\/p><h4>White <\/h4><p>For dark backgrounds.<\/p><p style=\"text-align:center\"><a href=\"https://www.encisosystems.com/sites/default/files/2021-07/enciso-systems-logo-white-r.png\"><img alt=\"Logo Enciso Systems White\" class=\"align-center img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-logo-white-r-600_1.png\"\\/><\/a><\/p><h4>Colors<\/h4><p><strong><span style=\"color:#0505a0\">Blue:<\/span><\/strong> #0505A0<br\/><strong><span style=\"color:#940094\">Violet:<\/span><\/strong> #940094<br\/><strong><span style=\"color:#212121\">Black:<\/span><\/strong> #212121<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/sites/default/files/2021-07/enciso-systems-logo-r.png\">Download logo full color<\/a> <\/li><li><a href=\"https://www.encisosystems.com/sites/default/files/2021-07/enciso-systems-logo-white-r.png\">Download logo white<\/a> <\/li><li><a href=\"/news/enciso2003\">Press Release<\/a><\/li><\/ul><h3>Other resources<\/h3><h4>Screen Backgrounds<\/h4><p><a href=\"https://www.encisosystems.com/sites/default/files/2021-03/enciso-systems-background-01.png\"><img alt=\"Background 01\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-background-01-thumbnail.png\"\\/><\/a> <a href=\"https://www.encisosystems.com/sites/default/files/2021-03/enciso-systems-background-02.png\"><img alt=\"Background 02\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-background-02-thumbnail.png\"\\/><\/a> <a href=\"https://www.encisosystems.com/sites/default/files/2021-03/enciso-systems-background-03.png\"><img alt=\"Background 03\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-background-03-thumbnail.png\"\\/><\/a><\/p><h4>LinkedIn Banner<\/h4><p><a href=\"https://www.encisosystems.com/sites/default/files/2020-08/enciso-systems-linkedin-banner.png\"><img alt=\"Enciso Systems LinkedIn Banner\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/enciso-systems-linkedin-banner-600.png\"\\/><\/a><\/p><h4>Minecraft Skin<\/h4><p><a href=\"/sites/default/files/2020-11/enciso-systems-minecraft-skin-file.png\"><img alt=\"Enciso Systems LinkedIn Banner\" class=\"img-fluid img-responsive\" src=\"https://www.encisosystems.com/sites/default/files/2020-11/enciso-systems-minecraft-skin.png\"\\/><\/a><\/p><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "3",
+        "fields": {
+            "id": "3",
+            "embedded": "False",
+            "title": "Anthem",
+            "content": " <h1>Anthem<\/h1><div class=\"embed-responsive embed-responsive-21by9\"><iframe align=\"middle\" class=\"embed-responsive-item\" frameborder=\"0\" height=\"315\" name=\"athem\" scrolling=\"no\" src=\"https://www.youtube.com/embed/RZ-2krreCRA\" title=\"Youtube video player\" width=\"560\"><\/iframe><\/div><p> <\/p><h2>Nuestro Universo<\/h2><p><strong>I<\/strong><br\/>Embarcamos nuestros sueños<br\/>Nuestro equipaje y abrazamos la ilusión<br\/>Teníamos la misión <br\/>De alcanzar las estrellas<br\/>De llegar tan lejos hasta el espacio exterior <br\/>El universo, es nuestra pasión<\/p><p> <\/p><p><strong>II<\/strong><br\/>Nos cubrieron tantos cielos<br\/>lugares y culturas para conocer<br\/>Logramos entender <br\/>Que la distancia enseña<br\/>Que nuestras raíces nos permiten florecer<br\/>Y nos regresan, a nuestro Llano<\/p><p> <\/p><p><strong>Chorus<\/strong><br\/>Esta es tu casa<br\/>Construiremos nuestros sueños en alianza<br\/>Queremos verte sonreír<\/p><p>Esta es tu casa<br\/>Programaremos futuros de esperanza <br\/>Queremos un mundo mejor<\/p><p>Esta es tu casa (bis) <br\/>Este es nuestro universo<\/p><p> <\/p><h3>Credits<\/h3><p>Enciso Systems<\/p><p><strong>Original lyrics and music:<\/strong> Tritono Ensamble - <a href=\"https://www.instagram.com/sergiosaidmusic/\">Sergio Andrés Said Eslava<\/a> (Saxophone), Danilo Ignacio Bustos (Cuatro), <a href=\"https://www.instagram.com/basscalao/\">Carlos Alfonso López Roa<\/a> (Bass), <a href=\"https://www.instagram.com/baterollanero/\">Juan Diego Forero<\/a> (Drums)<br\/><strong>General production, arrangements, guitar and premix:<\/strong> <a href=\"https://www.instagram.com/soydavidmrg/\">David Ramirez<\/a><br\/><strong>Adaptation of lyrics, keyboards, mixing and mastering:<\/strong> <a href=\"https://www.instagram.com/bochi__/\">Alejandro Vergara<\/a><br\/><strong>Adaptation of lyrics and voices:<\/strong> Juan Manuel Güiza<br\/><strong>Adaptation of lyrics: <\/strong>Juan David Vargas, Javier Enciso<br\/><strong>Voices:<\/strong> <a href=\"https://www.instagram.com/dairarobin/\">Daira Robin<\/a><br\/><strong>Harp:<\/strong> <a href=\"https://www.instagram.com/jprmusicoficial/\">Juan Pablo Rodríguez<\/a> <br\/><strong>Recording engineering: <\/strong>Container Music Lab/<a href=\"https://www.instagram.com/danielmartinez66_1/\">Daniel Martínez<\/a><br\/><strong>Video Editing:<\/strong> Angie Tatiana Palacios<br\/><strong>Project coordination:<\/strong> Juan David Vargas<\/p> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "4",
+        "fields": {
+            "id": "4",
+            "embedded": "False",
+            "title": "National Holidays",
+            "content": " <h1>National Holidays<\/h1><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><p>Please find below the list of Colombian National Holidays for 2022.<\/p><table class=\"table table-striped\"><thead><tr><th><strong>Date<\/strong><\/th><th><strong>Day<\/strong><\/th><th><strong>Holiday<\/strong><\/th><\/tr><\/thead><tbody><tr><td>1 Jan<\/td><td>Sat<\/td><td>New Year's Day<\/td><\/tr><tr><td>10 Jan<\/td><td>Mon<\/td><td>Epiphany Holiday<\/td><\/tr><tr><td>21 Mar<\/td><td>Mon<\/td><td>St Joseph's Day<\/td><\/tr><tr><td>14 Apr<\/td><td>Thu<\/td><td>Maundy Thursday<\/td><\/tr><tr><td>15 Apr<\/td><td>Fri<\/td><td>Good Friday<\/td><\/tr><tr><td>1 May<\/td><td>Sun<\/td><td>Labour Day<\/td><\/tr><tr><td>30 May<\/td><td>Mon<\/td><td>Ascension Day Holiday<\/td><\/tr><tr><td>20 Jun<\/td><td>Mon<\/td><td>Corpus Christi Holiday<\/td><\/tr><tr><td>27 Jun<\/td><td>Mon<\/td><td>Sacred Heart Day<\/td><\/tr><tr><td>4 Jul<\/td><td>Mon<\/td><td>Feast of St Peter and St Paul<\/td><\/tr><tr><td>20 Jul<\/td><td>Wed<\/td><td>Independence Day<\/td><\/tr><tr><td>7 Aug<\/td><td>Sun<\/td><td>Battle of Boyacá Day<\/td><\/tr><tr><td>15 Aug<\/td><td>Mon<\/td><td>Assumption Day Holiday<\/td><\/tr><tr><td>17 Oct<\/td><td>Mon<\/td><td>Columbus Day Holiday<\/td><\/tr><tr><td>7 Nov<\/td><td>Mon<\/td><td>All Saints' Day Holiday<\/td><\/tr><tr><td>14 Nov<\/td><td>Mon<\/td><td>Independence of Cartagena Holiday<\/td><\/tr><tr><td>8 Dec<\/td><td>Thu<\/td><td>Immaculate Conception<\/td><\/tr><tr><td>25 Dec<\/td><td>Sun<\/td><td>Christmas Day<\/td><\/tr><\/tbody><\/table><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "5",
+        "fields": {
+            "id": "5",
+            "embedded": "False",
+            "title": "People",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>People<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>The most important asset in our company<\/h2><p>There is a page dedicated to our <a href=\"/about/people/former-collaborators\">former collaborators/<\/a>.<\/p><h3>Staff<\/h3><h4>Javier Enciso<\/h4><p>CEO<\/p><p><img alt=\"Javier Enciso\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/javier-enciso_2.jpg\" style=\"float:right\"/><\/p><p style=\"text-align:justify\">Javier is a Computer Scientist from the <a href=\"https://unal.edu.co/\">National University of Colombia<\/a> and holds a Master of Science in Computer Science from the <a href=\"https://tum.de/\">Technical University Munich<\/a>. Over the years, he has worked at multinational technology companies and preeminent research organizations in Colombia, China, Germany and USA. Currently, he leads the web support teams behind organizations such as ESA/Webb, ESA/Hubble, IAU, ESO, NOIRLab, among others. He is happily married and proud father of three beautiful daughters.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/encisoj/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><p> <\/p><h4>Alejandra Rojas<\/h4><p>CFO<\/p><p><img alt=\"Alejandra Rojas\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/alejandra-rojas.jpg\" style=\"float:right;width:200px\"/><\/p><p>Alejandra is a Computer Scientist for the University of the Llanos.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/alejandra-rojas-1960a216/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><p> <\/p><h4>Juan-David Vargas  <img alt=\"Juan-David Vargas\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/juan-david-vargas.jpg\" style=\"float:right\"/><\/h4><p>Web Projects Coordinator<\/p><p style=\"text-align:justify\">Juan-David Vargas is a Computer Scientist from <a href=\"https://www.unillanos.edu.co/\">Universidad de los Llanos<\/a> and a final-year Music student at <a href=\"http://www.uptc.edu.co/\">UPTC<\/a>. He is a proud member of Enciso Systems since 2021, after several years of collaboration with the CEO and other members. Nowadays he shares his time between the realms of art and engineering, and the cities of Villavicencio and Tunja (Colombia), while helping to coordinate the coolest team in the galaxy.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/juan-david-vargas-mora/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h4>Paula Velasquez  <img alt=\"Paula Velasquez\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/paula-velasquez_0.jpg\" style=\"float:right\"/><\/h4><p>Software Engineer<\/p><p style=\"text-align:justify\">Her name is Paula Velasquez and She received his Bachelor's degree in Computer Scientist from the Universidad de Los Llanos of Colombia. She has been working at Enciso Systems company as a Software Engineer since January 2020 but she has worked with the CEO in some other projects since October 2019. In her free time she likes to read books and if she doesn’t have something to read, she likes to look for new books to read and add them in her Google drive.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/pvelasq/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h4>Ingry Romero <img alt=\"Ingry Romero\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/ingry-romero.jpg\" style=\"float:right\"/><\/h4><p>Content Assistant<\/p><p style=\"text-align:justify\">Her name is Ingry Romero and currently she is finishing her career as a System Engineer at Unillanos University. She has been working at Enciso Systems company as a software engineer since January. In her free time she likes to spend time with her family and practices a second language to improve her academic and work performance.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/ingryromero/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h4>Diego Palacios <img alt=\"Diego Palacios\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/diego-palacios.jpg\" style=\"float:right\"/><\/h4><p>Web Developer<\/p><p style=\"text-align:justify\">Diego is from Villavicencio, Colombia. He is a web developer and a member of Enciso Systems Company. He currently works using technologies like Django, React JS, and prototype development with Unity, he likes front-end development. He loves all of that.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/diego-palacios-09945a1a5/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h4>Alejandro Vivas<img alt=\"Alejandro Vivas\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/Alejandro.jpeg\" style=\"float:right\"/><\/h4><p>Web Developer<\/p><p style=\"text-align:justify\">Alejandro is a Computer Science student from Unillanos University. Currently, he is working at Enciso Systems where he is supporting the migration and content management of an astronomical website. In addition, he has experience as a backend developer with technologies like Django, Django Rest Framework, Celery and RabbitMQ. He likes to spend his free time cooking international recipes for his family.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/alejandro-vivas-660080132/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><hr/><h3>Contractors<\/h3><h4><a href=\"https://www.linkedin.com/in/carlos-ortiz-498968108/\">Carlos Ortíz<\/a><\/h4><p>Legal Advisor<\/p><h4><a href=\"https://www.linkedin.com/in/gisela-turriago-059199163/\">Gisela Turriago<\/a><\/h4><p>Accountant<\/p><h4>Álvaro Trujillo <img alt=\"Alvaro Trujillo\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/alvaro-trujillo.jpg\" style=\"float:right\"/><\/h4><p>English Teacher<\/p><p> <\/p><p> <\/p><p> <\/p><p> <\/p><h4> <\/h4><h4> <\/h4><h4>Libia Rios <img alt=\"Libia Rios\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/libia-rios.jpg\" style=\"float:right\"/><\/h4><p>Executive Assistant<\/p><p> <\/p><p> <\/p><p> <\/p><p> <\/p><p> <\/p><p> <\/p><h4> <\/h4><ul><\/ul><p> <\/p><h4>Maria Rincon<img alt=\"Maria Rincon\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/mariaRincon.jpg\" style=\"float:right;width:200px\"/><\/h4><p>Commercial Executive<\/p><p style=\"text-align:justify\">She is Maria Giovanna Rincon, graduated from Universidad del Meta as Business Administrator. Giovanna currently works as Sales Executive at Enciso Systems and has extended experience in sales along her professional career, keeping herself updated with the latest marketing trends. Giovanna is an entrepreneur who has created her own hand-made jewellery business. During her free time she enjoys having fun with her family as well as adding new creations to her jewellery collection.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/maria-giovanna-rincon-garcia-8b5030118/\">LinkedIn profile<\/a><\/li><\/ul><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "6",
+        "fields": {
+            "id": "6",
+            "embedded": "False",
+            "title": "Former Collaborators",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Former Collaborators<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h3>Former Volunteers<\/h3><h4>Samuel Medina<strong><img alt=\"Samuel Medina\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/samuel.jpeg\" style=\"float:right\"/><\/strong><\/h4><p>Software Engineer<\/p><p style=\"text-align:justify\">Born in 1999, he is a student of software engineer at Unillanos university, he is a student with a systems degree specialization from his high school. He has worked two semesters as an assistant teacher in math and programming. Currently working for Enciso systems company. He is a fan of Brandon Sanderson’s books, and an ocasional basketball player.<\/p><h5>LINKS<\/h5><ul><li><a href=\"https://www.linkedin.com/in/carlos-samuel-2408681a4/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h3>Former Interns<\/h3><h4>Javier Riveros<img alt=\"Javier Riveros\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/Javier.jpeg\" style=\"float:right\"/><\/h4><p>Software Development Intern<\/p><p style=\"text-align:justify\">Javier Riveros is a web developer, he is currently working as an intern at Enciso Systems company. He has experience building modern web applications using Ruby on Rails and React. In his spare time, he likes to learn new things and read books. He is currently finishing his systems engineering studies at Los Llanos university.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/javier-riveros/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><p> <\/p><h4>Jonathan Garzón<img alt=\"Jonatahan Garzón\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/Jonatahan.jpeg\" style=\"float:right\"/><\/h4><p> <\/p><p>Software Development Intern<\/p><p style=\"text-align:justify\">He is 23 years old. He is from Villavicencio, Colombia.Currently he is studying systems engineering at Unillanos university. He likes to learn new things about his career like programming languages, backend and new technologies. He has also been an intern at Enciso Systems company since May 4th, 2020.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/jonathan-andr%C3%A9s-garz%C3%B3n-7641291a5/\">LinkedIn profile<\/a><\/li><\/ul><h3>Contractors<\/h3><h4> Daniel Restrepo <img alt=\"Daniel Restrepo\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/daniel-restrepo.jpg\" style=\"float:right\"/><\/h4><p>Web Developer<\/p><p style=\"text-align:justify\">Daniel A. Restrepo Barbosa was born in Colombia on August 25, 1997. He received his Bachelor's degree in systems engineering from the Universidad de Los Llanos of Colombia in 2020. Since then, he has been with Enciso Systems, Villavicencio, Colombia, where he is currently the leading backend developer. The Space Telescope Science Institute website migration has been the project most bigger in which he has participated. He is interested in the Internet of Things, Stochastic process simulation, and the interpretation of musical pieces on the piano.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/daniel-alejandro-restrepo-barbosa-a14053198/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><h4>Angie Nathalia Martínez<\/h4><p>Commercial Executive<\/p><p style=\"text-align:justify\">Her name is Angie Nathalia Martínez, she recieved her degree In bilingüe technical with emphasis in customer service, Currently student of business administration at Minuto de Dios university. She has Been working at Enciso systems since May 2021. She has An extensive Experience with customer service. In Her free time she likes go to the cinema and read history articles and books.<\/p><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "7",
+        "fields": {
+            "id": "7",
+            "embedded": "False",
+            "title": "Software Development",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Software Development<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>Because Software Projects can be delivered in time and within budget!<\/h2><p><iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/OYL9O0fYUqQ\" width=\"560\"><\/iframe><\/p><h3>Related Products<\/h3><ul><li><a href=\"/products/issue-tracking-system\">Issue Tracking System<\/a><\/li><\/ul><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "8",
+        "fields": {
+            "id": "8",
+            "embedded": "False",
+            "title": "Web Content Management",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Web Content Management<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><p>Keep your web content up to date. We manage your Content Management System to make sure all information in consistent and with out broken links.<\/p><p>We have experience with the managing the following CMSs:<\/p><ul><li>Wordpress<\/li><li>Drupal<\/li><li>Djangoplicity<\/li><\/ul><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "9",
+        "fields": {
+            "id": "9",
+            "embedded": "False",
+            "title": "BYE BYE 404",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>BYE BYE 404<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>The World's Broken Link Fixer<\/h2><p style=\"text-align:justify\"><img alt=\"Logo BYE BYE 404\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-byebye404.png\" style=\"float:right\"/>Web content curators face the challenge to keep up hyperlink integrity (links, for short). According to scientific studies, link half-life is 2 years. In other words, 50% of your external links will be dead after 2 years. Therefore, fixing broken links is a regular task managers must take into account to present high content quality.<\/p><p style=\"text-align:justify\">BYE BYE 404 monitors your website to detect broken links. It scans every page, looks for broken links and recommends a solution. In this way, you will cut the maintenance time and produce consistent fixes for your links.<\/p><h3>Resources<\/h3><ul><li>Privacy<\/li><li>Terms and Conditions<\/li><li>User Manual<\/li><\/ul><h3>Links<\/h3><ul><li><a href=\"http://my.byebye404.com/signup/\">Sign up for BYE BYE 404<\/a><\/li><li><a href=\"/news/byebye404\">Read news about BYE BYE 404<\/a><\/li><li><a href=\"https://www.facebook.com/byebye404\">Follow BYE BYE 404 on Facebook<\/a> <\/li><li><a href=\"https://twitter.com/byebye404\">Follow BYE BYE 404 on Twitter<\/a><\/li><li><a href=\"https://www.linkedin.com/company/byebye404/\">Follow BYE BYE 404 on LinkedIn<\/a><\/li><\/ul><\/div><\/div><\/div>",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "10",
+        "fields": {
+            "id": "10",
+            "embedded": "False",
+            "title": "Covima",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>COVIMA<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>Timber Control and Monitoring<\/h2><p style=\"text-align:justify\"><img alt=\"COVIMA Splash\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/covima-splash.png\" style=\"float:right\"/>COVIMA (spanish acronym for: Control y Vigilancia de Maderas) is an app developed by Enciso Systems for the Colombian Ministry of Environment and Sustainable Development, under international cooperation by the Global Green Growth Institute and the Norwegian Embassy in Colombia.<\/p><h3>Links<\/h3><ul><li><a href=\"https://play.google.com/store/apps/details?id=com.app.encisosystems.covima\">Play Store<\/a><\/li><li><a href=\"https://web.archive.org/web/20220121021308/https://www.minambiente.gov.co/sistema-nacional-ambiental-sina/app-covima-la-apuesta-tecnologica-desarrollada-por-minambiente-gggi-y-el-reino-de-noruega/\">COVIMA Press Release at Ministry of Environment and Sustainable Development<\/a> (Spanish, Archived)<\/li><li><a href=\"https://www.minambiente.gov.co/\">Ministry of Environment and Sustainable Development<\/a><\/li><li><a href=\"http://gggi.org/colombia/\">Global Green Growth Institute Colombia<\/a><\/li><\/ul><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "11",
+        "fields": {
+            "id": "11",
+            "embedded": "False",
+            "title": "FITS Liberator",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>FITS Liberator<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>The Astronomical Image Processing Tool<\/h2><p><iframe frameborder=\"0\" height=\"315\" src=\"https://www.youtube.com/embed/5DczpMykr00?start=265\" title=\"YouTube video player\" width=\"560\"><\/iframe><\/p><p style=\"text-align:justify\">The NOIRLab/IPAC/ESA/STScI/CfA FITS Liberator 4 is an image processing tool used by scientists and general public to produce the most beautiful astronomical images.<\/p><p style=\"text-align:justify\">The NOIRLab/IPAC/ESA/STScI/CfA FITS Liberator 4 brings several useful features, including: command line interface, reorganization of the graphical user interface, <em>Dark Mode<\/em>, support for big files, ability to run on top of the main 64-bit operating systems, and many more. Stay tuned, and get ready to liberate the most fascinating images out for this world!<\/p><h3>Development Team<\/h3><p>The team that produced the NOIRLab/IPAC/ESA/STScI/CfA FITS Liberator 4 consists of:<\/p><p>Developers, CLI and GUI development: Juan Fajardo & David Zambrano <br/>Scientific, technical support and testing: Robert Hurt<br/>Technical Project Manager: Javier Enciso<br/>Project Executive: Lars Lindberg Christensen<\/p><h3>Links<\/h3><ul><li><a href=\"https://noirlab.edu/public/products/fitsliberator/\">Official FITS Liberator page<\/a><\/li><li><a href=\"https://noirlab.edu/public/products/applications/app001/\">Download FITS Liberator<\/a><\/li><li>Source Code<ul><li><a href=\"https://gitlab.com/noirlab/fits-liberator-cli\">Command Line Interface<\/a><\/li><li><a href=\"https://gitlab.com/noirlab/fits-liberator-gui\">Graphical User Interface<\/a><\/li><\/ul><\/li><\/ul><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "12",
+        "fields": {
+            "id": "12",
+            "embedded": "False",
+            "title": "Enciso Tracking",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Enciso Tracking<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>Reliable Cloud-based Issue Tracking System<\/h2><p>For organizations starting to implement an issue tracking system<\/p><h3>Features<\/h3><ul><li>Email reporting based on <a href=\"https://www.encisosystems.com/news/enciso2101\">Google Workspace technology<\/a><\/li><li>Customizable email notification upon issue transition<\/li><li>Access control<\/li><li>Workflow customization<\/li><li>Custom reports in multiple formats<\/li><li>Web and Mobile access<\/li><li>Daily Backups<\/li><li>Automatic software updates<\/li><li>Cloud-based solution<\/li><\/ul><h3>Annual Subscription Plan Includes<\/h3><ul><li>English and Spanish support<\/li><li>1GB of data storage<\/li><li>1 Project capable to log tickets with [yourcompany]@encisosystems.com<\/li><li>Up to 5 users<\/li><li>A proactive software development and web content team willing to improve your productivity<\/li><\/ul><h3>Customers<\/h3><ul><li>ESA/Hubble<\/li><li>NOIRLab<\/li><li>ESO<\/li><\/ul><h3>Pricing<\/h3><table border=\"1\" style=\"width:600px\"><thead><tr><th scope=\"col\"> <\/th><th scope=\"col\">Shared<\/th><th scope=\"col\">Private<\/th><th scope=\"col\">On-premises<\/th><\/tr><\/thead><tbody><tr><td>Projects<\/td><td>1<\/td><td>Unlimited<\/td><td>Unlimited<\/td><\/tr><tr><td>Users<\/td><td>5<\/td><td>Unlimited<\/td><td>Unlimited<\/td><\/tr><tr><td>Custom Domain<\/td><td>No<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Email<\/td><td>No<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Branding<\/td><td>No<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Access Control<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Fields<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Workflow<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Unicode Support<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Text Search<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Filters<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Custom Reports<\/td><td>Yes<\/td><td>Yes<\/td><td>Yes<\/td><\/tr><tr><td>Implementation Cost (USD)<\/td><td>0<\/td><td>$600<\/td><td>$600<\/td><\/tr><tr><td>Monthly Cost (USD)<\/td><td>$20<\/td><td>$50<\/td><td>$0<\/td><\/tr><tr><td> <\/td><td><a class=\"avangate_button\" href=\"#buy\">Buy now!<\/a><\/td><td><a class=\"avangate_button\" href=\"#buy\">Buy now!<\/a><\/td><td><a class=\"avangate_button\" href=\"#buy\">Buy now!<\/a><\/td><\/tr><\/tbody><\/table><h3>Refund Policy<\/h3><p>Thanks for subscribing to our services at encisosystems.com operated by Enciso Systems.<\/p><p>We offer a full money-back guarantee for all purchases made on our website. If you are not satisfied with the product that you have purchased from us, you can get your money back no questions asked. You are eligible for a full reimbursement within 14 calendar days of your purchase.<\/p><p>After the 14-day period you will no longer be eligible and won't be able to receive a refund. We encourage our customers to try our service in the first two weeks after their purchase to ensure it fits your needs.<\/p><p>If you have any additional questions or would like to request a refund, feel free to <a href=\"https://www.encisosystems.com/about/contact\">contact us<\/a>.<\/p><\/div><\/div><\/div>",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "13",
+        "fields": {
+            "id": "13",
+            "embedded": "False",
+            "title": "Research",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Research<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><p>Besides activities in the productive sector, Enciso System's team collaborates with Universities and students can write their academic work along the projects they are working on.<\/p><h3>Bachelor Thesis<\/h3><p>2021: <a href=\"https://www.encisosystems.com/sites/default/files/2021-05/21vivas.pdf\"><em>Migration From Redis To RabbitMQ In Broken Link Web Application<\/em><\/a>. Alejandro Vivas. Director: Javier Enciso.<\/p><p>2020: <em><a href=\"https://www.encisosystems.com/sites/default/files/2020-10/20palacios.pdf\">Reconstruction of Graphical User Interface Based on React Technology for Broken Links Maintenance Web Application<\/a><\/em>. Diego Palacios. Director: Javier Enciso.<\/p><p>2020: <a href=\"https://www.encisosystems.com/sites/default/files/2020-10/20velasquez.pdf\"><em>Road Map Construction for Information and Technology Business Governance in Multi-agency Commercial Distributor<\/em><\/a>. Paula Velasquez. Director: Javier Enciso.<\/p><h3>Conference Papers<\/h3><p>2018: <em><a href=\"https://doi.org/10.18687/laccei2018.1.1.140\">A Multi-strategy Recommendation Algorithm to Retrieve Broken Hyperlinks<\/a><\/em>. Emiraldo Lozano, Roger Calderón, Javier Enciso.<\/p><p>2016: <em><a href=\"http://laccei.org/LACCEI2016-SanJose/meta/RP217.html\">Modeling and Simulation of Passenger Traffic in a National Airport<\/a><\/em>. Pablo Martínez, Juan Vargas, Javier Enciso.<\/p><p>2016: <em><a href=\"http://laccei.org/LACCEI2016-SanJose/meta/RP303.html\">Development of literacy skills in elementary basic education through gamification<\/a><\/em>. Edison Arango, Javier Enciso.<\/p><h3>Books<\/h3><p>2012: <em><a href=\"https://www.amazon.com/gp/product/3847360140/\">Tensor Contraction Schemes: Applied to 2D Problems in Quantum Simulations<\/a><\/em>. Javier Enciso.<\/p><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "14",
+        "fields": {
+            "id": "14",
+            "embedded": "False",
+            "title": "Customers",
+            "content": " <h1>Customers<\/h1><h3>Harvard & Smithsonian Center for Astrophysics<\/h3><p style=\"text-align:justify\"><img alt=\"Logo Center for Astrophysics\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-cfa.jpg\" style=\"float:right\"/>The <a href=\"https://www.cfa.harvard.edu/\">Center for Astrophysics<\/a> combines the resources and research facilities of the Harvard College Observatory and the Smithsonian Astrophysical Observatory under a single director to pursue studies of those basic physical processes that determine the nature and evolution of the universe. The Smithsonian Astrophysical Observatory (SAO) is a bureau of the Smithsonian Institution, founded in 1890. The Harvard College Observatory (HCO), founded in 1839, is a research institution of the Faculty of Arts and Sciences, Harvard University, and provides facilities and substantial other support for teaching activities of the Department of Astronomy.<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/news/cfa\">News about CfA & Enciso Systems<\/a><\/li><\/ul><h3>European Southern Observatory<\/h3><p style=\"text-align:justify\"><img alt=\"Logo ESO\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-eso.png\" style=\"float:right\"/>The <a href=\"https://www.eso.org/\">European Southern Observatory<\/a> (ESO) is the foremost intergovernmental astronomy organization in Europe and the world's most productive astronomical observatory. ESO provides state-of-the-art research facilities to astronomers and is supported by Austria, Belgium, the Czech Republic, Denmark, Finland, France, Germany, Ireland, Italy, the Netherlands, Poland, Portugal, Spain, Sweden, Switzerland and the United Kingdom, along with the host state of Chile. Several other countries have expressed an interest in membership.<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/news/eso\">News about ESO & Enciso Systems<\/a> <\/li><\/ul><h3> <\/h3><h3>International Astronomical Union<\/h3><p style=\"text-align:justify\"><img alt=\"Logo IAU\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-iau.jpg\" style=\"float:right\"/>The <a href=\"https://www.iau.org/\">International Astronomical Union<\/a> (IAU) was founded in 1919. Its mission is to promote and safeguard the science of astronomy in all its aspects, including research, communication, education and development, through international cooperation. Its individual Members — structured into Divisions, Commissions, and Working Groups — are professional astronomers from all over the world, at the Ph.D. level and beyond, who are active in professional research, education and outreach in astronomy. The IAU also has Junior Members. The IAU has 13055 members. The Individual and Junior Members Directory contains 10567 names in 107 countries worldwide (these Individual Members are labeled as \"active\" in the IAU database: they have a valid, public email, and are affiliated to at least one Division.). Out of those countries, 82 are National Members. In addition, the IAU collaborates with various scientific organizations all over the world.<\/p><h4>Links<\/h4><ul><li>News about IAU & Enciso Systems<\/li><\/ul><h3>European Space Agency<\/h3><p style=\"text-align:justify\"><img alt=\"Logo ESA\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-esa.png\" style=\"float:right\"/>The <a href=\"https://www.esa.int/\">European Space Agency<\/a> (ESA) is Europe’s gateway to space. Its mission is to shape the development of Europe’s space capability and ensure that investment in space continues to deliver benefits to the citizens of Europe and the world.<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/news/esa\">News about ESA & Enciso Systems<\/a><\/li><\/ul><h3>NSF’s National Optical-Infrared Astronomy Research Laboratory<\/h3><p style=\"text-align:justify\"><img alt=\"Logo NOIRLab\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-noirlab.png\" style=\"float:right\"/>NSF’s National Optical-Infrared Astronomy Research Laboratory (NOIRLab) is the preeminent US national center for ground-based, nighttime optical and infrared astronomy. The mission of NOIRLab is to enable breakthrough discoveries in astrophysics by developing and operating state-of-the-art ground-based observatories and providing data products and services for a diverse and inclusive community.<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/news/noirlab\">News about NOIRLab & Enciso Systems<\/a><\/li><\/ul><h3>Global Green Growth Institute<\/h3><p style=\"text-align:justify\"><img alt=\"Logo GGGI\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-gggi.png\" style=\"float:right\"/>The <a href=\"https://gggi.org/\">Global Green Growth Institute<\/a> (GGGI) is a treaty-based international, inter-governmental organization dedicated to supporting and promoting strong, inclusive and sustainable economic growth in developing countries and emerging economies.<\/p><h4>Links<\/h4><ul><li>News about GGGI & Enciso Systems<\/li><\/ul><h3>Space Telescope Science Institute<\/h3><p style=\"text-align:justify\"><img alt=\"Logo STScI\" class=\"img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/logo-stsci.png\" style=\"float:right\"/>Established in 1981, the <a href=\"http://stsci.edu/\">Space Telescope Science Institute<\/a> (STScI) in Baltimore, Maryland has helped guide the most famous observatory in history, the Hubble Space Telescope.  Since its launch in 1990, STScI has performed the science operations for Hubble. STScI also led the science and mission operations for the James Webb Space Telescope (JWST), planned to launch in 2021.<\/p><h4>Links<\/h4><ul><li><a href=\"https://www.encisosystems.com/news/stsci\">News about STScI & Enciso Systems<\/a><\/li><\/ul> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "15",
+        "fields": {
+            "id": "15",
+            "embedded": "False",
+            "title": "Jobs",
+            "content": " <h1>Jobs<\/h1><h3>Non-discrimination Policy<\/h3><p style=\"text-align:justify\">Diversity is a treasure. We prohibit discrimination against any employee, contractor or applicant on the basis of race, color, creed, religion, national origin, marital status, age, sex, sexual preference, sexual orientation, gender identity and gender expression, military or veteran status, or disability status. <\/p><h2><a href=\"/jobs/internship/\" rel=\"bookmark\">Internship: Speculative Application<\/a><\/h2><p><a href=\"/jobs/internship/\"><img alt=\"Internship: Speculative Application\" src=\"https://www.encisosystems.com/sites/default/files/styles/medium/public/2020-07/job2004a.png?itok=snFbDuql\" style=\"float:left;height:150px;width:250px\"/><\/a><\/p><p>job2004 - You didn't find a position that match your interests and profile? It's not a problem, just send your speculative application and we will contact you as soon as we get the requirement. We are always looking for motivated last-semester students to help Enciso Systems with exciting projects. Join us to get first-hand experience with colleagues from USA and Europe, while working in advanced projects for big science organizations.<\/p><ul><li><a href=\"/jobs/internship/\" rel=\"tag\" title=\"Internship: Speculative Application\">Read more<\/a><\/li><\/ul> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "16",
+        "fields": {
+            "id": "16",
+            "embedded": "False",
+            "title": "Benefits",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Former Collaborators<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h3>Former Volunteers<\/h3><h4>Samuel Medina<strong><img alt=\"Samuel Medina\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/samuel.jpeg\" style=\"float:right\"/><\/strong><\/h4><p>Software Engineer<\/p><p style=\"text-align:justify\">Born in 1999, he is a student of software engineer at Unillanos university, he is a student with a systems degree specialization from his high school. He has worked two semesters as an assistant teacher in math and programming. Currently working for Enciso systems company. He is a fan of Brandon Sanderson’s books, and an ocasional basketball player.<\/p><h5>LINKS<\/h5><ul><li><a href=\"https://www.linkedin.com/in/carlos-samuel-2408681a4/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><h3>Former Interns<\/h3><h4>Javier Riveros<img alt=\"Javier Riveros\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/Javier.jpeg\" style=\"float:right\"/><\/h4><p>Software Development Intern<\/p><p style=\"text-align:justify\">Javier Riveros is a web developer, he is currently working as an intern at Enciso Systems company. He has experience building modern web applications using Ruby on Rails and React. In his spare time, he likes to learn new things and read books. He is currently finishing his systems engineering studies at Los Llanos university.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/javier-riveros/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><p> <\/p><p> <\/p><h4>Jonathan Garzón<img alt=\"Jonatahan Garzón\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/Jonatahan.jpeg\" style=\"float:right\"/><\/h4><p> <\/p><p>Software Development Intern<\/p><p style=\"text-align:justify\">He is 23 years old. He is from Villavicencio, Colombia.Currently he is studying systems engineering at Unillanos university. He likes to learn new things about his career like programming languages, backend and new technologies. He has also been an intern at Enciso Systems company since May 4th, 2020.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/jonathan-andr%C3%A9s-garz%C3%B3n-7641291a5/\">LinkedIn profile<\/a><\/li><\/ul><h3>Contractors<\/h3><h4> Daniel Restrepo <img alt=\"Daniel Restrepo\" class=\"align-right img-fluid img-responsive ml-2\" src=\"https://www.encisosystems.com/sites/default/files/inline-images/daniel-restrepo.jpg\" style=\"float:right\"/><\/h4><p>Web Developer<\/p><p style=\"text-align:justify\">Daniel A. Restrepo Barbosa was born in Colombia on August 25, 1997. He received his Bachelor's degree in systems engineering from the Universidad de Los Llanos of Colombia in 2020. Since then, he has been with Enciso Systems, Villavicencio, Colombia, where he is currently the leading backend developer. The Space Telescope Science Institute website migration has been the project most bigger in which he has participated. He is interested in the Internet of Things, Stochastic process simulation, and the interpretation of musical pieces on the piano.<\/p><h5>Links<\/h5><ul><li><a href=\"https://www.linkedin.com/in/daniel-alejandro-restrepo-barbosa-a14053198/\">LinkedIn profile<\/a><\/li><\/ul><p> <\/p><h4>Angie Nathalia Martínez<\/h4><p>Commercial Executive<\/p><p style=\"text-align:justify\">Her name is Angie Nathalia Martínez, she recieved her degree In bilingüe technical with emphasis in customer service, Currently student of business administration at Minuto de Dios university. She has Been working at Enciso systems since May 2021. She has An extensive Experience with customer service. In Her free time she likes go to the cinema and read history articles and books.<\/p><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "17",
+        "fields": {
+            "id": "17",
+            "embedded": "False",
+            "title": "Internship",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Internship: Speculative Application<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"field field--label-hidden field--name-field-image field--type-image field__item\" style=\"text-align:center\"><img alt=\"Internship: Speculative Application\" class=\"image-style-large\" src=\"https://www.encisosystems.com/sites/default/files/styles/large/public/2020-07/job2004a.png?itok=UZSKJgSP\" style=\"height:506px;width:640px\"/><\/div><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><p><strong>ID: job2004<\/strong><\/p><p>You didn't find a position that match your interests and profile? It's not a problem, just send your speculative application and we will contact you as soon as we get the requirement. We are always looking for motivated last-semester students to help Enciso Systems with exciting projects. Join us to get first-hand experience with colleagues from USA and Europe, while working in advanced projects for big science organizations.<\/p><h3>General Objective<\/h3><ul><li>Help Enciso Systems with exiting internship projects<\/li><\/ul><h3>Benefits<\/h3><ul><li>You will work with a vibrant team and interact with foreign customers<\/li><li>English lessons during the internship<\/li><li>You can write an academic paper and submit to an international conference<\/li><li>Transportation aid<\/li><li>Top-performance interns might be hired after the internship<\/li><\/ul><h3>Type<\/h3><ul><li>Internship<\/li><\/ul><h3>Duration<\/h3><ul><li>16 weeks, full time<\/li><\/ul><h3>Application deadline<\/h3><ul><li>Permanently open<\/li><\/ul><h3>Application material<\/h3><ul><li>CV in PDF format<ul><li>Include links to previous project examples (e.g., github, LinkedIn, etc)<\/li><\/ul><\/li><li>Motivation letter in PDF<\/li><li>Tentative start date as a full-time intern<\/li><\/ul><p>Send your application materials to <a href=\"mailto:jobs@encisosystems.com\">jobs@encisosystems.com<\/a>, include the ID of this offer in the subject line. <\/p><\/div><div class=\"clearfix field field--label-inline field--name-field-tags field--type-entity-reference\"><div class=\"field__label\"><strong>Tags:<\/strong> <a href=\"/jobs\">Jobs<\/a><\/div><\/div><\/div><\/div>",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.Pages",
+        "pk": "18",
+        "fields": {
+            "id": "18",
+            "embedded": "False",
+            "title": "Businesses",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Businesses<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h2>Important information for our corporate allies<\/h2><h3>Contractors<\/h3><p>In order to process your invoice, please follow the <a href=\"https://www.encisosystems.com/sites/default/files/2020-09/formato-cuenta-de-cobro.pdf\">requirement instructions<\/a> (also available as <a href=\"https://www.encisosystems.com/sites/default/files/2020-09/formato-cuenta-de-cobro.docx\">editable file<\/a>) and email your invoice as a <strong><a href=\"https://www.google.com/search?q=merge+pdf+files\">SINGLE PDF<\/a> <\/strong>to your contract supervisor, with copy to accounting services.<\/p><h4>Conditions<\/h4><ul><li>Payments are subject to withholding tax (Retención en la Fuente) according to current regulation.<\/li><li>Payments are made electronically by corporate bank account.<\/li><li>Invoices received after the 20th will processed in the next month.<\/li><\/ul><\/div><\/div><\/div>",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },    
+    {
+        "model": "pages.Pages",
+        "pk": "19",
+        "fields": {
+            "id": "19",
+            "embedded": "False",
+            "title": "Contact",
+            "content": " <div class=\"block block-core block-page-title-block\" id=\"block-porto-page-title\"><h1>Contact<\/h1><\/div><div class=\"block block-system block-system-main-block\" id=\"block-porto-content\"><div class=\"node__content\"><div class=\"clearfix field field--label-hidden field--name-body field--type-text-with-summary field__item text-formatted\"><h3>How to reach us?<\/h3><p>We are located in the Paraíso neighborhood, one block from Catama Avenue in the direction of Tránsito Municipal (Secretary of Mobility).<\/p><h3>Opening Hours<\/h3><p>Monday to Friday from 7:00 am to 11:00 am and from 1:00 pm to 5:00 pm.<\/p><h3>Contact<\/h3><p><strong>Address:<\/strong> Calle 35B # 19D - 40, Villavicencio - Colombia<br/><strong>Phone:<\/strong> +57 (608) 678 2084<br/><strong>Cell:<\/strong> <img src=\"https://www.encisosystems.com/sites/default/files/2021-01/whatsapp.svg\" style=\"height:14px\"/><a href=\"https://wa.link/enlw79\" tabindex=\"-1\">+57 320 880 8381<\/a> <br/><strong>Email:<\/strong> <a href=\"mailto:info@encisosystems.com\">info@encisosystems.com<\/a><\/p><p><img src=\"https://www.encisosystems.com/sites/default/files/2020-11/enciso-systems-hq.png\" style=\"width:100%\"/><\/p><\/div><\/div><\/div> ",
+            "script": "",
+            "description": "",
+            "keywords": "",
+            "opengraph_image": "",
+            "last_modified": "2022-04-12 14:56:20.101996+00",
+            "created": "2022-04-12 14:56:20.10202+00",
+            "published": "True",
+            "start_publishing": "",
+            "end_publishing": "",
+            "section": "1",
+            "template_name": "",
+            "login_required": "False",
+            "dynamic": "False",
+            "raw_html": "False",
+            "live_edit": "True",
+            "redirect_url": "",
+            "groups": ""
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "1",
+        "fields": {
+            "url": "/about/",
+            "page": "1"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "2",
+        "fields": {
+            "url": "/about/corporate-identity/",
+            "page": "2"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "3",
+        "fields": {
+            "url": "/about/anthem/",
+            "page": "3"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "4",
+        "fields": {
+            "url": "/about/national-holidays/",
+            "page": "4"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "5",
+        "fields": {
+            "url": "/about/people/",
+            "page": "5"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "6",
+        "fields": {
+            "url": "/about/people/former-collaborators/",
+            "page": "6"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "7",
+        "fields": {
+            "url": "/services/software-development/",
+            "page": "7"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "8",
+        "fields": {
+            "url": "/services/web-content-management/",
+            "page": "8"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "9",
+        "fields": {
+            "url": "/services/byevye404/",
+            "page": "9"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "10",
+        "fields": {
+            "url": "/services/covima/",
+            "page": "10"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "11",
+        "fields": {
+            "url": "/services/fitsliberator/",
+            "page": "11"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "12",
+        "fields": {
+            "url": "/services/enciso-tracking/",
+            "page": "12"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "13",
+        "fields": {
+            "url": "/research/",
+            "page": "13"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "14",
+        "fields": {
+            "url": "/customers/",
+            "page": "14"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "15",
+        "fields": {
+            "url": "/jobs/",
+            "page": "15"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "16",
+        "fields": {
+            "url": "/jobs/benefits/",
+            "page": "16"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "17",
+        "fields": {
+            "url": "/jobs/internship/",
+            "page": "17"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "18",
+        "fields": {
+            "url": "/businesses/",
+            "page": "18"            
+        }
+    },
+    {
+        "model": "pages.URL",
+        "pk": "19",
+        "fields": {
+            "url": "/contact/",
+            "page": "19"            
+        }
+    }    
+]

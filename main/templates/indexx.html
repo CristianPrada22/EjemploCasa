@@ -1,0 +1,170 @@
+{% extends "base.html" %}
+{% load static i18n%}
+{% block title %}
+  {% trans "Enciso's shop" %}
+{% endblock title %}
+
+{% block navbar %}
+ <!-- Navbar Start-->
+ <header class="nav-holder make-sticky">
+  <div id="navbar" role="navigation" class="navbar navbar-expand-lg">
+    <div class="col-lg-2 col-md-3 col-sm-3">
+      <a href="{% url 'main:shop' %}" class="navbar-brand home">
+        <img src="{% static 'img/enciso.png' %}" alt="Universal logo" class="d-none d-md-inline-block">
+        <img src="{% static 'img/enciso.png' %}" alt="Universal logo" class="d-inline-block d-md-none">
+        <span class="sr-only">{% trans "Enciso - go to homepage" %}</span>
+      </a>
+    </div>
+    <!-- Navbar -->
+    <div class="col-lg-9 col-md-8 col-sm-8 p-0">
+      <div class="container p-0">
+        {% load menus %}
+        {% init_menu 'Shop Menu' as shop_menu %}            
+        <!-- Button collapse-->            
+        <button type="button" data-toggle="collapse" data-target="#navigation"
+          class="navbar-toggler btn-template-outlined"><span class="sr-only">{% trans "Toggle navigation" %}</span><i
+          class="fa fa-align-justify"></i>
+        </button>          
+        <div id="navigation" class="navbar-collapse collapse">
+          <!--Search -->            
+          <div class="form-group w-50 m-1">
+            <form class="d-flex" method=POST action="{% url 'shop:search' %}">
+              {% csrf_token %}
+              <input type="text" class="form-control" placeholder="{% trans 'Search' %}" name="search">
+              <div class="input-group-append">
+                <button class="btn btn-outline-primary" type="submit">
+                  <i class="fa fa-search"></i>
+                </button>
+              </div>
+            </form>                
+          </div> 
+          <!-- Navbar menus-->          
+          {% render_menu shop_menu main %}            
+        </div>                     
+      </div>
+    </div>
+    <!-- Cart Item -->
+    {% load cart_template_tags %}
+    <div class="col-lg-1 col-md-1 col-sm-1">
+      <a href="{% url 'shop:summary' %}" class="site-cart float-right">
+        <span><i class="fa fa-shopping-cart"></i></span>
+        <span class="count"> {{request|cart_item_count}} </span>
+      </a>
+    </div>        
+  </div>
+</header>
+<!-- Navbar End-->
+{% endblock navbar %}
+
+{% block content %}
+
+<!-- imagen de fondo -->
+<section >
+  <div class="container">
+    <!-- Carousel Start-->
+    <div class="home-carousel">
+      <div class="dark-mask mask-primary"></div>
+      <div class="container">
+        <div class="homepage owl-carousel">
+          <div class="item">
+            <div class="row">
+              <div class="col-md-5 text-right">
+                <!--<p><img src="{% static 'img/logo.png' %}" alt="" class="ml-auto"></p>-->
+                <h1>{% trans "COMPUTER FAIR" %}</h1>
+                <p>{% trans "Computers for study" %}<br>{% trans "work and entertainment" %}</p>
+              </div>
+              <div class="col-md-7"><img src="{% static 'img/sportatil.png' %}" alt="" class="img-fluid"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-7 text-center"><img src="{% static 'img/small-cell.png' %}" alt="" class="img-fluid"></div>
+              <div class="col-md-5">
+                <h1>{% trans "YOUR IDEAL CELL PHONE AT THE BEST PRICE" %}</h1>
+                <!-- <ul class="list-unstyled">
+                  <li>Sliders and carousels</li>
+                  <li>4 Header variations</li>
+                  <li>Google maps, Forms, Megamenu, CSS3 Animations and much more</li>
+                  <li>+ 11 extra pages showing template features</li>
+                </ul>-->
+              </div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-5 text-right">
+                <h1>{% trans "THE BEST IN FASHION CAN BE FOUND HERE" %}</h1>
+                <ul class="list-unstyled">
+                  <li>{% trans "CLOTHES FOR MEN" %}</li>
+                  <li>{% trans "WOMEN'S CLOTHING" %}</li>
+                  <li>{% trans "CLOTHES FOR KIDS" %}</li>                
+                </ul>
+              </div>
+              <div class="col-md-7"><img src="{% static 'img/smoda.png' %}" alt=""
+                  class="img-fluid"></div>
+            </div>
+          </div>
+          <div class="item">
+            <div class="row">
+              <div class="col-md-7"><img src="{% static 'img/tenis.png' %}" alt="" class="img-fluid">
+              </div>
+              <div class="col-md-5">
+                <h1>{% trans "RUNING SPORT SHOES"%}</h1>
+                <!--<ul class="list-unstyled">
+                  <li>7 preprepared colour variations.</li>
+                  <li>Easily to change fonts</li>
+                </ul>-->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Carousel End-->
+  </div>
+</section>
+<section class="bar bg-body">
+  <div class="container bg-white">
+    <div class="heading text-center"><br>
+      <h2>{% trans "PRODUCTS"%}</h2>
+    </div>
+
+    <div class="container ">
+      <div class="row mb-5">
+    
+        {% for product in object_list %}
+        <div class="col-lg-4 col-md-6 col-ms-6 mb-2 mt-5" data-aos='fade-up'>
+          <div class="d-flex align-items-start justify-content-center" >
+            <figure class="block-4-image ">
+              <a href="{{ product.get_absolute_url }}"><img class="img-fluid img-responsive" style="height: 250px;" src="{{ product.image.url }}" alt="{{ product.title }}"> </a>
+            </figure>
+          </div>         
+    
+          <div class="d-block justify-content-start block-4-text p-2">
+            <a href="{{ product.get_absolute_url }}">
+              <h3>{{ product.title }}</h3>
+            </a>
+            <p class="mb-0">{% trans "Price" %}: {{ product.price }}</p>
+          </div>
+        </div>
+        {% endfor %}
+      </div>
+    </div>
+  </div>
+</section>
+<section class="bar bg-clients">
+  <div class="container">
+    <div class="heading text-center">
+      <h2>{% trans "Our Clients" %}</h2>
+    </div>
+    <ul class="list-unstyled owl-carousel customers no-mb">
+      <li class="item"><img src="{% static 'img/customer-1.png' %}" alt="" class="img-fluid"></li>
+      <li class="item"><img src="{% static 'img/customer-2.png' %}" alt="" class="img-fluid"></li>
+      <li class="item"><img src="{% static 'img/customer-3.png' %}" alt="" class="img-fluid"></li>
+      <li class="item"><img src="{% static 'img/customer-4.png' %}" alt="" class="img-fluid"></li>
+      <li class="item"><img src="{% static 'img/customer-5.png' %}" alt="" class="img-fluid"></li>
+      <li class="item"><img src="{% static 'img/customer-6.png' %}" alt="" class="img-fluid"></li>
+    </ul>
+  </div>
+</section>
+{% endblock content %}

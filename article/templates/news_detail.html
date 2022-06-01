@@ -1,0 +1,49 @@
+{% extends "home.html" %}
+{% load static i18n %}
+{% load crispy_forms_tags %}
+{% block title %}
+    {% trans "Article detail" %}
+{% endblock title %}
+
+{% block content %}
+<div class="site-section m-3 p-3">
+    <div class="container bg-white">
+        <div class="container p-2">
+            <div class="mb-2 mt-4">
+                <div>
+                    <h1 class="font-weight-normal">{{ article.name }}</h1>
+                </div>
+                <div class="row m-4">
+                    <div class="col-sm-11">                        
+                        <div class="d-flex justify-content-center">
+                            <img class="img-fluid img-responsive" height="600" width="800" src="{{ article.image.url }}" alt="{{ article.name }}">
+                        </div>            
+                    </div>
+                </div>
+                <div>
+                    <h1 class="font-weight-normal ">{{ article.title }}</h1>
+                </div>
+                <div id="description" class="box mb-4 mt-4">
+                    <p class="text-justify font-weight-bold h4" style="color: rgb(92, 91, 91) !important;" >{{ article.abstract|safe }}</p>
+                    <hr>
+                    <p >{{ article.content|safe }}</p>
+                    <h3>Notes</h3>
+                    <p>{{ article.notes|safe }}</p>
+                    <h3>Links</h3>
+                    <p>{{ article.links|safe }}</p>  
+                    <h3>More information</h3>
+                    <p>{{ article.more_information|safe }}</p>  
+                    <h3>Contacts</h3>
+                    <p>{{ article.contacts|safe }}</p>
+                    <div class="row pl-3">
+                        <div>
+                            <strong>Tags:</strong>
+                        </div>
+                        {{ article.tags|safe }} 
+                    </div>                   
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+{% endblock content %}
