@@ -74,3 +74,4 @@ class PageAPIView(viewsets.ModelViewSet):
             )
 
         return result
+        
